@@ -1,0 +1,109 @@
+@font-face {
+    font-family: ;
+    src: url();
+}
+
+html, body {
+    margin-top: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-image: url("/ressources/bg.png");
+    background-repeat: no-repeat;
+    margin: 0px;
+}
+
+header {
+    width: 100%;
+    height: 155px;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo-box {
+    background-image: url("/ressources/logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 230px;
+    margin-left: 40px;
+    background-position: center;
+}
+
+.emplacement-logo {
+    width: 55%;
+    height: 155px;
+}
+
+.menu {
+    display: flex;
+    height: 100%;
+    width: 45%;
+    justify-content: center;
+    font-family: bebas-neue-by-fontfabric, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17.5px;
+    letter-spacing: 0.7px;
+    color: white;
+}
+
+.menu-ol {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0px;
+    padding-left: 0px;
+    padding-right: 40px;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.menu-li {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 10px;
+    margin-right: 10px;
+    white-space: nowrap;
+    text-align: center;
+    justify-content: center;
+    width: 105px;
+    height: 40px;
+    align-items: center;
+}
+
+.menu-li:hover {
+    color: rgb(190, 30, 45);
+    cursor: pointer;
+    transition: 0.3s;
+    border-bottom: 1px solid rgb(190, 30, 45);
+}
+
+.bars {
+    background-image: url("/ressources/bars.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
+
+}
+
+.bars:hover {
+    border-bottom: none !important;
+    background-image: url("/ressources/bars-hover.png");
+}
+
+.dropdown {
+    background-image: url(/ressources//caret.png);
+    background-repeat: no-repeat;
+    background-size: 14px;
+    background-position: right;
+}
+
+.dropdown:hover {
+    background-image: url("/ressources/caret-hover.png");
+}
