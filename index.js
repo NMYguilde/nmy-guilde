@@ -31,8 +31,15 @@ dropDownTeams.onclick = function() {
 }
 
 dropDownMembres.onclick = function() {
+    document.getElementById("membresTeams")
     membresTeams.style.opacity = "0";
     pageLaGuilde.style.transform = "translate(-100%)"
     pageLaGuilde.style.opacity ="0"
 }
 
+function showHide() {
+    if (membresTeams.style.opacity == "0") {
+        membresTeams.style.opacity ="1"
+    }
+
+}
