@@ -17,16 +17,23 @@
         </div>
         <div class="menu">
             <ol class="menu-ol">
-                <li class="menu-li">ACCUEIL</li>
-                <li class="menu-li dropdown">ROSTER</li>
-                <li class="menu-li">LA GUILDE</li>
+                <li id="menuAccueil" class="menu-li">ACCUEIL</li>
+                <div class="menu-drop-down">
+                    <li id="menuRoster" class="menu-li dropdown-icon relative">ROSTER</li>
+                    <div id="membresTeams" class="membres-teams">
+                        <span id="dropDownMembres" class="hover">MEMBRES</span>
+                        <br>
+                        <span id="dropDownTeams" class="hover">TEAMS</span>
+                    </div>
+                </div>
+                <li id="menuLaGuilde" class="menu-li">LA GUILDE</li>
                 <li class="menu-li">NOUS REJOINDRE</li>
                 <li class="menu-li">CONTACT</li>
                 <li class="menu-li bars"></li>
             </ol>
         </div>
     </header>
-<div class="msg">
+<div id="msg" class="msg">
     <h1 class="msg-accueil">
         BIENVENUE ! <br>
         GUILDE ENEMY
@@ -44,7 +51,12 @@
         <li class="socials-li facebook"></li>
     </ol>
 </div>
-<div class="page-laguilde"></div>
+<div class="center">
+<div id="pageLaGuilde" class="page-laguilde">
+    <h1 class="titre-page-laguilde">ENEMY</h1>
+    <h2 class="sous-titre-page-laguilde">GUILDE LOST ARK Serveur TRIXION</h2>
+</div>
+</div>
 </body>
 <script type="text/javascript" src="index.js"></script>
 </html>

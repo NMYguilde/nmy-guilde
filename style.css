@@ -87,19 +87,43 @@ header {
 
 }
 
+.menu-drop-down {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+}
+
+.membres-teams {
+    position: absolute;
+    left: 80px;
+    display: flex;
+    flex-direction: column;
+    top: 45px;
+    height: 0px;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.hover:hover {
+    cursor: pointer;
+    color: rgb(190, 30, 45);
+}
+
 .bars:hover {
     border-bottom: none !important;
     background-image: url("ressources/bars-hover.png");
 }
 
-.dropdown {
+.dropdown-icon {
     background-image: url("ressources/caret.png");
     background-repeat: no-repeat;
     background-size: 14px;
     background-position: right;
 }
 
-.dropdown:hover {
+.dropdown-icon:hover {
     background-image: url("ressources/caret-hover.png");
 }
 
@@ -214,8 +238,32 @@ header {
 }
 
 .page-laguilde {
-    width: 100%;
+    width: 80%;
     height: 80%;
     background-color: black;
-    /*transform: translate(-100%);*/
+    transform: translate(-100%);
+    transition: 0.4s;
+    opacity: 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;    
+    border-radius: 5px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+}
+
+.titre-page-laguilde {
+    color: white;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    font-family: bebas-neue-by-fontfabric, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 25px;
+    letter-spacing: 0.7px;
 }
