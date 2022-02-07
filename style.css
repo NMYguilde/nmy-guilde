@@ -102,3 +102,120 @@ header {
 .dropdown:hover {
     background-image: url("ressources/caret-hover.png");
 }
+
+.msg-accueil {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.actif {
+    color: green;
+}
+
+.msg-recrutement {
+    color: rgb(150, 150, 150);
+    font-size: 25px;
+}
+
+.msg-serveur {
+    color: rgb(150, 150, 200);
+    font-size: 20px;
+}
+
+.msg {
+    position: absolute;
+    top: 35%;
+    left: 8%;
+    font-family: bebas-neue-by-fontfabric, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 3px;
+    font-size: 42px;
+}
+
+.socials {
+    color: white;
+    position: absolute;
+    top: 20%;
+    right: 0%;
+    height: 250px;
+    padding: 0;
+    padding-right: 20px;
+    display: flex;
+    width: 36px;
+}
+
+.socials-ol {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+    padding: 0;
+
+}
+
+.socials-li {
+    height: 16px;
+    width: 36px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.socials-li:hover {
+    transition: 0.4s;
+}
+
+.steam {
+    background-image: url("ressources/steam.png");
+}
+.steam:hover {
+    background-image: url("ressources/steam-hover.png");
+
+}
+.twitter {
+    background-image: url("ressources/twitter.png");
+}
+
+.twitter:hover {
+    background-image: url("ressources/twitter-hover.png");
+}
+
+.youtube {
+    background-image: url("ressources/youtube.png");
+}
+
+.youtube:hover {
+    background-image: url("ressources/youtube-hover.png");
+}
+.instagram {
+    background-image: url("ressources/instagram.png");
+}
+
+.instagram:hover {
+    background-image: url("ressources/instagram-hover.png");
+}
+
+.facebook {
+    background-image: url("ressources/facebook.png");
+}
+
+.facebook:hover {
+    background-image: url("ressources/facebook-hover.png");
+}
+
+.twitch {
+    background-image: url("ressources/twitch.png");
+}
+
+.twitch:hover {
+    background-image: url("ressources/twitch-hover.png");
+}
+
+.page-laguilde {
+    width: 100%;
+    height: 80%;
+    background-color: black;
+    /*transform: translate(-100%);*/
+}
