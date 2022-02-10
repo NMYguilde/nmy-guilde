@@ -34,6 +34,13 @@
           width: 80% !important;
         
       }
+
+      .emplacement-logo {
+        width: 55% !important;
+        height: 155px!important;
+        display: flex!important;
+        justify-content: center!important;
+      }
       .logo-box {
           margin-left: 0px !important;
           margin-top: 20px !important;
