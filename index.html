@@ -18,18 +18,10 @@
         <div class="menu">
             <ol class="menu-ol">
                 <li id="menuAccueil" class="menu-li">ACCUEIL</li>
-                <div class="menu-drop-down">
-                    <li id="menuRoster" class="menu-li dropdown-icon relative">ROSTER</li>
-                    <div onclick="function showHide()" id="membresTeams" class="membres-teams">
-                        <span id="dropDownMembres" class="hover">MEMBRES</span>
-                        <br>
-                        <span id="dropDownTeams" class="hover">TEAMS</span>
-                    </div>
-                </div>
-                <li id="menuLaGuilde" class="menu-li">LA GUILDE</li>
-                <li class="menu-li">NOUS REJOINDRE</li>
+                <li id="menuLaGuilde" class="menu-li">ROSTER</li>
+                <a target="_blank" href="https://forms.gle/4hW7Gp5S3JLkNXLm8"><li class="menu-li">NOUS REJOINDRE</li></a>
                 <li class="menu-li">CONTACT</li>
-                <li class="menu-li bars"></li>
+                <li class="menu-li" id="menuDiscord" class="discord"><img src="/ressources/discord.png" alt="icon-discord"></li>
             </ol>
         </div>
     </header>
@@ -50,6 +42,11 @@
         <li class="socials-li instagram"></li>
         <li class="socials-li facebook"></li>
     </ol>
+</div>
+
+<div id="discordDiv" class="discord-div">
+    <div id="discordClose" class="discord-close"></div>
+    <iframe src="https://discord.com/widget?id=939999420487979028&theme=dark" width="300" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 </div>
 <div class="center">
 <div id="pageLaGuilde" class="page-laguilde">

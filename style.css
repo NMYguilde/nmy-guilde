@@ -1,7 +1,53 @@
+@media screen and (min-width: 900px) {
+    .bars {
+        display: none !important;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+      header {
+          flex-direction: column !important;
+          justify-content: center !important;
+          align-items: center !important;
+          width: 100% !important;
+      }
+      .menu {
+          width: 100% !important;
+      }
+      .menu-ol {
+          width: 90% !important;
+          padding: 0px !important;
+      }
+      .socials {
+          top: unset !important;
+          right: unset !important;
+          width: 100% !important ;
+          justify-content: center !important;
+          background-color: rgba(139, 96, 96, 0.212);
+          height: unset !important;
+          box-shadow: 0 0 25px black !important;
+      }
+      .socials-ol {
+          flex-direction: row !important;
+          width: 80% !important;
+        
+      }
+      .logo-box {
+          margin-left: 0px !important;
+          margin-top: 20px !important;
+          margin-bottom: 20px !important;
+
+      }
+
+  }
+
+
+
 html, body {
     margin-top: 0px;
     height: 100%;
     width: 100%;
+    min-width: 390px !important;
 }
 
 body {
@@ -66,7 +112,6 @@ header {
     white-space: nowrap;
     text-align: center;
     justify-content: center;
-    width: 105px;
     height: 40px;
     align-items: center;
 }
@@ -80,7 +125,7 @@ header {
 
 .bars {
     background-image: url("ressources/bars.png");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     height: 20px;
     width: 20px;
@@ -93,6 +138,16 @@ header {
     justify-content: space-between;
     flex-direction: column;
     position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: unset !important;
+}
+
+a:visited {
+    text-decoration: none;
+    color: unset !important;
 }
 
 .membres-teams {
@@ -210,6 +265,15 @@ header {
     background-image: url("ressources/youtube.png");
 }
 
+.widgetHeader {
+    background-color: red !important;
+}
+
+.discord:hover {
+    text-decoration: none !important;
+    border-bottom: none !important;
+}
+
 .youtube:hover {
     background-image: url("ressources/youtube-hover.png");
 }
@@ -267,3 +331,30 @@ header {
     font-size: 25px;
     letter-spacing: 0.7px;
 }
+
+.discord-div {
+    position: absolute;
+    right: 10%;
+    top: 25%;
+    opacity: 0;
+    height: 0px;
+    transition: 0.4s;
+}
+
+.discord-close {
+    height: 29px;
+    width: 120px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 103%;
+    background-image: url("ressources/close.png");
+    background-size: contain;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.582);
+}
+
+.discord-close:hover {
+    background-image: url("ressources/close-hover.png");
+    cursor: pointer;
+}
+
