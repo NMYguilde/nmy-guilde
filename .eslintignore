@@ -1,0 +1,11 @@
+node_modules
+!**/.eslintrc*
+*.svg
+*.ico
+*.json
+.gitignore
+*.md
+*.log
+*.lock
+jest.config.js
+.eslintrc.js
