@@ -5,7 +5,8 @@ document.getElementById("menuAccueil");
 document.getElementById("menuDiscord");
 document.getElementById("discordDiv")
 document.getElementById("discordClose")
-
+document.getElementById("socialsOpen")
+document.getElementById("socials")
 
 menuLaGuilde.onclick = function() {
     pageLaGuilde.style.transform = "translate(0%)";
@@ -41,4 +42,10 @@ menuDiscord.onclick = function() {
 discordClose.onclick = function() {
     discordDiv.style.height = "0px";
     discordDiv.style.opacity = "0";
+}
+
+socialsOpen.onclick = function() {
+    socials.style.opacity = "1";
+    socials.style.width = "95% !important";
+
 }
