@@ -9,7 +9,7 @@ document.getElementById("discordClose")
 
 menuLaGuilde.onclick = function() {
     pageLaGuilde.style.transform = "translate(0%)";
-    pageLaGuilde.style.opacity ="0.85";
+    pageLaGuilde.style.opacity ="1";
     msg.style.display = "none";
     discordDiv.style.height = "0px";
     discordDiv.style.opacity = "0";

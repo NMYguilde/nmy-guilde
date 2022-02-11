@@ -4,6 +4,8 @@
     }
   }
 
+  
+
   @media screen and (max-width: 900px) {
       header {
           flex-direction: column !important;
@@ -15,8 +17,9 @@
           width: 100% !important;
       }
       .menu-ol {
-          width: 90% !important;
+          width: 95% !important;
           padding: 0px !important;
+          justify-content: space-evenly !important;
       }
       .socials {
           top: unset !important;
@@ -27,7 +30,7 @@
           height: unset !important;
           box-shadow: 0 0 25px black !important;
           padding: 0px !important;
-          position: unset !important;
+          bottom: 0% !important;
       }
       .socials-ol {
           flex-direction: row !important;
@@ -45,13 +48,61 @@
           margin-left: 0px !important;
           margin-top: 20px !important;
           margin-bottom: 20px !important;
+          width: 180px !important;
 
+      }
+      .menu-li {
+          margin: 0 !important;
       }
       .msg {
           font-size: 22px !important;
 
       }
 
+  }
+
+  @media screen and (max-width: 900px) {
+      .roster {
+          flex-direction: column !important;
+          height: 100% !important;
+          align-items: flex-start !important;
+      }
+      .page-laguilde {
+          width: 100% !important;
+          height: unset !important;
+      }
+      .titre-page-laguilde {
+          display: none !important;
+      }
+      .center {
+          height: unset !important;
+      }
+      .guilde-under-construction {
+          display: none !important;
+      }
+      .membres {
+          margin-top: 40px !important;
+      }
+      .teams {
+          width: 100% !important;
+          margin-left: 0 !important;
+      }
+      .membres {
+          width: 100% !important;
+          margin-top: 0 !important;
+      }
+      .icon-plus-txt {
+          margin-left: 0 !important;
+          margin-top: 40px !important;
+        
+      }
+      .logo-box {
+          height: unset !important;
+      }
+      .menu {
+          border: 1px solid rgba(136, 0, 0, 0.37) !important;
+          border-bottom: 0px !important;
+      }
   }
 
 
@@ -96,11 +147,13 @@ header {
     height: 100%;
     width: 45%;
     justify-content: center;
-    font-family: bebas-neue-by-fontfabric, sans-serif;
+    font-family: titillium-web, sans-serif;
+
     font-weight: 400;
+    
     font-style: normal;
-    font-size: 17.5px;
-    letter-spacing: 0.7px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
     color: white;
 }
 
@@ -218,10 +271,12 @@ a:visited {
     position: absolute;
     top: 35%;
     left: 8%;
-    font-family: bebas-neue-by-fontfabric, sans-serif;
+    font-family: titillium-web, sans-serif;
+
     font-weight: 400;
+    
     font-style: normal;
-    letter-spacing: 3px;
+    font-size: 14px;
     font-size: 42px;
 }
 
@@ -317,11 +372,11 @@ a:visited {
 .page-laguilde {
     width: 80%;
     height: 80%;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.849);
     transform: translate(-100%);
     transition: 0.4s;
     opacity: 0;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;    
+    box-shadow: 0 0 25 black; 
     border-radius: 5px;
 }
 
@@ -338,10 +393,10 @@ a:visited {
     position: absolute;
     left: 50%;
     transform: translate(-50%);
-    font-family: bebas-neue-by-fontfabric, sans-serif;
-    font-weight: 500;
+    font-family: titillium-web, sans-serif;
+    font-weight: 600;
     font-style: normal;
-    font-size: 25px;
+    font-size: 20px;
     letter-spacing: 0.7px;
 }
 
@@ -371,3 +426,178 @@ a:visited {
     cursor: pointer;
 }
 
+.membres {
+    height: 80%;
+    width: 40%;
+}
+
+.teams {
+    height: 80%;
+    width: 40%;
+    background-color: rgba(26, 26, 26, 0.5);
+
+}
+
+.roster {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family: titillium-web, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.membres-txt {
+
+    font-size: 24px;
+    color: white;
+    margin-left: 20px;
+}
+
+.ol-membres,
+.ol-teams {
+    list-style: none;
+    color: white;
+
+}
+
+.li-membres,
+.li-teams {
+    font-size: 14px;
+    margin-top: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.li-teams:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.li-membres:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.guildroles {
+    color:rgb(200, 0, 0);
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+
+.pvp-icon {
+    background-image: url("ressources/pvp-icon.png");
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.icon-plus-txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.teams-icon {
+    background-image: url("ressources/teams-icon.png");
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.simple-line {
+    width: 100%;
+    display: flex;
+
+    justify-content: center;
+}
+
+.line {
+    background-color: rgb(200, 0, 0);
+    width: 50%;
+    height: 1px;
+}
+
+.first-team {
+    font-size: 17px;
+}
+
+.redpill {
+    color: rgb(200, 0, 0);
+    font-style: italic;
+}
+
+.shadowhunter, .blader {
+    color: rgb(148, 0, 216);
+    font-style: italic;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.shadowhunter:hover {
+    text-decoration: none !important;
+}
+
+.sorcerer {
+    color: rgb(185, 0, 0);
+    font-style: italic;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.paladin {
+    color: rgb(0, 67, 167);
+    font-style: italic;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.martial {
+    color: rgb(0, 102, 88);
+    font-style: italic;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.tireur {
+    color: rgb(218, 141, 0);
+    font-style: italic;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 10px;
+
+}
+
+.undefined {
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.test {
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.sh-icon {
+    width: 14px;
+    height: 14px;
+    background-size: contain;
+    margin-right: 10px;
+}
