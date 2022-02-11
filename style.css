@@ -2,6 +2,9 @@
     .bars {
         display: none !important;
     }
+    .socials-open {
+        display: none !important;
+    }
   }
 
   
