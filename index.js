@@ -1,28 +1,26 @@
-document.getElementById('pageLaGuilde');
-document.getElementById('menuLaGuilde');
-document.getElementById('msg');
-document.getElementById('menuAccueil');
-document.getElementById('menuDiscord');
-document.getElementById('discordDiv');
-document.getElementById('discordClose');
-document.getElementById('socialsOpen');
-document.getElementById('socials');
+function onClickMenuLaGuilde() {
+  var pageLaGuilde = document.getElementById('pageLaGuilde');
+  var msg = document.getElementById('msg');
+  var discordDiv = document.getElementById('discordDiv');
 
-menuLaGuilde.onclick = function () {
   pageLaGuilde.style.transform = 'translate(0%)';
   pageLaGuilde.style.opacity = '1';
   msg.style.display = 'none';
   discordDiv.style.height = '0px';
   discordDiv.style.opacity = '0';
-};
+}
 
-menuAccueil.onclick = function () {
+function onClickMenuAccueil() {
+  var pageLaGuilde = document.getElementById('pageLaGuilde');
+  var msg = document.getElementById('msg');
+  var discordDiv = document.getElementById('discordDiv');
+
   pageLaGuilde.style.transform = 'translate(-100%)';
   pageLaGuilde.style.opacity = '0';
   msg.style.display = 'block';
   discordDiv.style.height = '0px';
   discordDiv.style.opacity = '0';
-};
+}
 
 function showHide() {
   if (membresTeams.style.opacity == '0') {
@@ -30,19 +28,24 @@ function showHide() {
   }
 }
 
-menuDiscord.onclick = function () {
+function onClickMenuDiscord() {
+  var discordDiv = document.getElementById('discordDiv');
+  var pageLaGuilde = document.getElementById('pageLaGuilde');
+
   discordDiv.style.height = '500px';
   discordDiv.style.opacity = '1';
   pageLaGuilde.style.transform = 'translate(-100%)';
   pageLaGuilde.style.opacity = '0';
-};
+}
 
-discordClose.onclick = function () {
+function onClickDiscordClose() {
+  var discordDiv = document.getElementById('discordDiv');
   discordDiv.style.height = '0px';
   discordDiv.style.opacity = '0';
-};
+}
 
-socialsOpen.onclick = function () {
+function onClickSocialsOpen() {
+  var socials = document.getElementById('socials');
   socials.style.opacity = '1';
   socials.style.width = '95% !important';
-};
+}

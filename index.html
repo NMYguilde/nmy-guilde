@@ -21,13 +21,22 @@
       </div>
       <div class="menu">
         <ol class="menu-ol">
-          <li id="menuAccueil" class="menu-li">ACCUEIL</li>
-          <li id="menuLaGuilde" class="menu-li">ROSTER</li>
+          <li id="menuAccueil" class="menu-li" onclick="onClickMenuAccueil()">
+            ACCUEIL
+          </li>
+          <li id="menuLaGuilde" class="menu-li" onclick="onClickMenuLaGuilde()">
+            ROSTER
+          </li>
           <a target="_blank" href="https://forms.gle/4hW7Gp5S3JLkNXLm8"
             ><li class="menu-li">NOUS REJOINDRE</li></a
           >
           <li class="menu-li">CONTACT</li>
-          <li class="menu-li" id="menuDiscord" class="discord">
+          <li
+            class="menu-li"
+            id="menuDiscord"
+            class="discord"
+            onclick="onClickMenuDiscord()"
+          >
             <img src="ressources/discord.png" alt="icon-discord" />
           </li>
         </ol>
@@ -44,7 +53,9 @@
       <h3 class="msg-serveur">SERVEUR : TRIXION</h3>
     </div>
     <div style="width: 100%">
-      <span id="socialsOpen" class="socials-open">CLICK HERE FOR SOCIALS</span>
+      <span id="socialsOpen" class="socials-open" onclick="onClickSocialsOpen()"
+        >CLICK HERE FOR SOCIALS</span
+      >
     </div>
     <div id="socials" class="socials">
       <ol class="socials-ol">
@@ -62,7 +73,11 @@
     </div>
 
     <div id="discordDiv" class="discord-div">
-      <div id="discordClose" class="discord-close"></div>
+      <div
+        id="discordClose"
+        class="discord-close"
+        onclick="onClickDiscordClose()"
+      ></div>
       <iframe
         src="https://discord.com/widget?id=939999420487979028&theme=dark"
         width="300"
