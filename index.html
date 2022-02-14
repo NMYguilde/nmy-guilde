@@ -1,104 +1,232 @@
 <!DOCTYPE html>
 <html lang="en/fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://use.typekit.net/dbs6bxg.css">
-    <link rel="icon" href="ressources/favicon.png">
-    <script src="https://kit.fontawesome.com/d1eb31d158.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/dbs6bxg.css" />
+    <link rel="icon" href="ressources/favicon.png" />
+    <script
+      src="https://kit.fontawesome.com/d1eb31d158.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="index.js"></script>
     <title>ENEMY - Lost Ark</title>
-
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="emplacement-logo">
-            <div class="logo-box"></div>
-        </div>
-        <div class="menu">
-            <ol class="menu-ol">
-                <li id="menuAccueil" class="menu-li">ACCUEIL</li>
-                <li id="menuLaGuilde" class="menu-li">ROSTER</li>
-                <a target="_blank" href="https://forms.gle/4hW7Gp5S3JLkNXLm8"><li class="menu-li">NOUS REJOINDRE</li></a>
-                <li class="menu-li">CONTACT</li>
-                <li class="menu-li" id="menuDiscord" class="discord"><img src="ressources/discord.png" alt="icon-discord"></li>
-            </ol>
-        </div>
+      <div class="emplacement-logo">
+        <div class="logo-box"></div>
+      </div>
+      <div class="menu">
+        <ol class="menu-ol">
+          <li id="menuAccueil" class="menu-li">ACCUEIL</li>
+          <li id="menuLaGuilde" class="menu-li">ROSTER</li>
+          <a target="_blank" href="https://forms.gle/4hW7Gp5S3JLkNXLm8"
+            ><li class="menu-li">NOUS REJOINDRE</li></a
+          >
+          <li class="menu-li">CONTACT</li>
+          <li class="menu-li" id="menuDiscord" class="discord">
+            <img src="ressources/discord.png" alt="icon-discord" />
+          </li>
+        </ol>
+      </div>
     </header>
-<div id="msg" class="msg">
-    <h1 class="msg-accueil">
-        BIENVENUE ! <br>
+    <div id="msg" class="msg">
+      <h1 class="msg-accueil">
+        BIENVENUE ! <br />
         GUILDE ENEMY
-    </h1>
-    <h2 class="msg-recrutement"><span class="actif">RECRUTEMENT ACTIF</span></h2>
-    <h3 class="msg-serveur">SERVEUR : TRIXION</h3>
-</div>
-<div style="width: 100%;">
-    <span id="socialsOpen" class="socials-open">CLICK HERE FOR SOCIALS</span>
-</div>
-<div id="socials" class="socials">
-    <ol class="socials-ol">
-        <a target="_blank" href="https://www.twitch.tv/nmy_efsan"><li class="socials-li twitch"></li></a>
-        <a target="_blank" href="https://steamcommunity.com/id/nawflashback/"><li class="socials-li steam"></li></a>
+      </h1>
+      <h2 class="msg-recrutement">
+        <span class="actif">RECRUTEMENT ACTIF</span>
+      </h2>
+      <h3 class="msg-serveur">SERVEUR : TRIXION</h3>
+    </div>
+    <div style="width: 100%">
+      <span id="socialsOpen" class="socials-open">CLICK HERE FOR SOCIALS</span>
+    </div>
+    <div id="socials" class="socials">
+      <ol class="socials-ol">
+        <a target="_blank" href="https://www.twitch.tv/nmy_efsan"
+          ><li class="socials-li twitch"></li
+        ></a>
+        <a target="_blank" href="https://steamcommunity.com/id/nawflashback/"
+          ><li class="socials-li steam"></li
+        ></a>
         <li class="socials-li twitter"></li>
         <li class="socials-li youtube"></li>
         <li class="socials-li instagram"></li>
         <li class="socials-li facebook"></li>
-    </ol>
-</div>
+      </ol>
+    </div>
 
-<div id="discordDiv" class="discord-div">
-    <div id="discordClose" class="discord-close"></div>
-    <iframe src="https://discord.com/widget?id=939999420487979028&theme=dark" width="300" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-</div>
-<div class="center">
-<div id="pageLaGuilde" class="page-laguilde">
+    <div id="discordDiv" class="discord-div">
+      <div id="discordClose" class="discord-close"></div>
+      <iframe
+        src="https://discord.com/widget?id=939999420487979028&theme=dark"
+        width="300"
+        height="500"
+        allowtransparency="true"
+        frameborder="0"
+        sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+      ></iframe>
+    </div>
+    <div class="center">
+      <div id="pageLaGuilde" class="page-laguilde">
         <h1 class="titre-page-laguilde">ENEMY</h1>
-    <div class="roster">
-        <div class="membres">
+        <div class="roster">
+          <div class="membres">
             <div class="icon-plus-txt">
-                <div class="teams-icon"></div>
-                <h1 class="membres-txt">MEMBRES</h1>
+              <div class="teams-icon"></div>
+              <h1 class="membres-txt">MEMBRES</h1>
             </div>
             <ol class="ol-membres">
-                <li class="li-membres"><img class="sh-icon" src="ressources/shadowhunter-icon.png" alt="">Efsan<span class="test shadowhunter">Shadow Hunter</span><span class="guildroles">(GM)</span></li>
-                <li class="li-membres"><img class="sh-icon" src="ressources/soulfist-icon.png" alt="">Sorrowsoul </span><span class="martial">Soulfist</span><span class="guildroles">(Off. PvE)</li>
-                <li class="li-membres"><img class="sh-icon" src="ressources/sorcerer-icon.png" alt="">Tilik<span class="sorcerer">Sorcerer</span><span class="guildroles">(Off. PvP)</span></li>
-                <li class="li-membres"><img class="sh-icon" src="ressources/deathblade-icon.png" alt="">Shaios<span class="blader">Deathblade</span></li>
-                <li class="li-membres"><img class="sh-icon" src="ressources/pal-icon.png" alt="">Chocc<span class="paladin">Paladin</span></li>
-                <li class="li-membres"><img class="sh-icon" src="ressources/berserker-icon.png" alt="">Kaann<span class="paladin">Berserker</span></li>
-                <li class="li-membres"><img class="sh-icon" src="ressources/berserker-icon.png" alt="">Stayolo<span class="paladin">Berserker</span></li>
-                <li class="li-membres"><img class="sh-icon" src="ressources/pal-icon.png" alt="">Lunessance <span class="paladin">Paladin</span></li>
-                <li class="li-membres"><img class="sh-icon" src="ressources/arti-icon.png" alt="">Braezilian<span class="tireur">Artillerist</span></li>
-                <li class="li-membres"><img class="sh-icon" src="ressources/wardancer-icon.png" alt="">Nagyung<span class="martial">Wardancer</span></li>
-                <li class="li-membres"><img class="sh-icon" src="ressources/bard-icon.png" alt="">Nizatsu<span class="sorcerer">Bard</span></li>
-                <li class="li-membres"><img class="sh-icon" src="ressources/bard-icon.png" alt="">Vorgeos<span class="sorcerer">Bard</span></li>
+              <li class="li-membres">
+                <img
+                  class="sh-icon"
+                  src="ressources/shadowhunter-icon.png"
+                  alt=""
+                />Efsan<span class="test shadowhunter">Shadow Hunter</span
+                ><span class="guildroles">(GM)</span>
+              </li>
+              <li class="li-membres">
+                <img
+                  class="sh-icon"
+                  src="ressources/soulfist-icon.png"
+                  alt=""
+                />Sorrowsoul<span class="martial">Soulfist</span
+                ><span class="guildroles">(Off. PvE)</span>
+              </li>
+              <li class="li-membres">
+                <img
+                  class="sh-icon"
+                  src="ressources/sorcerer-icon.png"
+                  alt=""
+                />Tilik<span class="sorcerer">Sorcerer</span
+                ><span class="guildroles">(Off. PvP)</span>
+              </li>
+              <li class="li-membres">
+                <img
+                  class="sh-icon"
+                  src="ressources/deathblade-icon.png"
+                  alt=""
+                />Shaios<span class="blader">Deathblade</span>
+              </li>
+              <li class="li-membres">
+                <img
+                  class="sh-icon"
+                  src="ressources/pal-icon.png"
+                  alt=""
+                />Chocc<span class="paladin">Paladin</span>
+              </li>
+              <li class="li-membres">
+                <img
+                  class="sh-icon"
+                  src="ressources/berserker-icon.png"
+                  alt=""
+                />Kaann<span class="paladin">Berserker</span>
+              </li>
+              <li class="li-membres">
+                <img
+                  class="sh-icon"
+                  src="ressources/berserker-icon.png"
+                  alt=""
+                />Stayolo<span class="paladin">Berserker</span>
+              </li>
+              <li class="li-membres">
+                <img
+                  class="sh-icon"
+                  src="ressources/pal-icon.png"
+                  alt=""
+                />Lunessance <span class="paladin">Paladin</span>
+              </li>
+              <li class="li-membres">
+                <img
+                  class="sh-icon"
+                  src="ressources/arti-icon.png"
+                  alt=""
+                />Braezilian<span class="tireur">Artillerist</span>
+              </li>
+              <li class="li-membres">
+                <img
+                  class="sh-icon"
+                  src="ressources/wardancer-icon.png"
+                  alt=""
+                />Nagyung<span class="martial">Wardancer</span>
+              </li>
+              <li class="li-membres">
+                <img
+                  class="sh-icon"
+                  src="ressources/bard-icon.png"
+                  alt=""
+                />Nizatsu<span class="sorcerer">Bard</span>
+              </li>
+              <li class="li-membres">
+                <img
+                  class="sh-icon"
+                  src="ressources/bard-icon.png"
+                  alt=""
+                />Vorgeos<span class="sorcerer">Bard</span>
+              </li>
             </ol>
-        </div>
-        <div class="membres-txt teams">
+          </div>
+          <div class="membres-txt teams">
             <div class="icon-plus-txt">
-                <div class="pvp-icon"></div>
-                <h1 class="membres-txt">TEAMS 3c3</h1>
+              <div class="pvp-icon"></div>
+              <h1 class="membres-txt">TEAMS 3c3</h1>
             </div>
 
             <ol class="ol-teams">
-                <h3 class="first-team">Team <span class="redpill">"RED PILL"</span></h3>
-                <li class="li-teams"><img class="sh-icon" src="ressources/shadowhunter-icon.png" alt="">Efsan <span class="shadowhunter">Shadow Hunter</span></li>
-                <li class="li-teams"><img class="sh-icon" src="ressources/sorcerer-icon.png" alt="">Tilik <span class="sorcerer">Sorcerer</span></li>
-                <li class="li-teams"><img class="sh-icon" src="ressources/pal-icon.png" alt="">Lunessance <span class="paladin">Paladin</span></li>
+              <h3 class="first-team">
+                Team <span class="redpill">"RED PILL"</span>
+              </h3>
+              <li class="li-teams">
+                <img
+                  class="sh-icon"
+                  src="ressources/shadowhunter-icon.png"
+                  alt=""
+                />Efsan <span class="shadowhunter">Shadow Hunter</span>
+              </li>
+              <li class="li-teams">
+                <img
+                  class="sh-icon"
+                  src="ressources/sorcerer-icon.png"
+                  alt=""
+                />Tilik <span class="sorcerer">Sorcerer</span>
+              </li>
+              <li class="li-teams">
+                <img
+                  class="sh-icon"
+                  src="ressources/pal-icon.png"
+                  alt=""
+                />Lunessance <span class="paladin">Paladin</span>
+              </li>
             </ol>
             <div class="simple-line">
-                <div class="line"></div>
+              <div class="line"></div>
             </div>
             <ol></ol>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-</div>
-<div style="position: absolute; text-align: center; bottom: 2%; left: 50%; transform: translate(-50%); text-shadow: 0 0 25 black; color: rgb(200, 0, 0); font-size: 12px; font-family: Verdana, Geneva, Tahoma, sans-serif; letter-spacing: 3px;" class="guilde-under-construction">
-    WEBSITE EN CONSTRUCTION
-</div>
-</body>
-<script type="text/javascript" src="index.js"></script>
+    <div
+      style="
+        position: absolute;
+        text-align: center;
+        bottom: 2%;
+        left: 50%;
+        transform: translate(-50%);
+        text-shadow: 0 0 25 black;
+        color: rgb(200, 0, 0);
+        font-size: 12px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        letter-spacing: 3px;
+      "
+      class="guilde-under-construction"
+    >
+      WEBSITE EN CONSTRUCTION
+    </div>
+  </body>
 </html>
