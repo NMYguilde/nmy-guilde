@@ -7,6 +7,8 @@ let btnclose = document.getElementById("close")
 btncontact.onclick = function() {
     boxcontact.style.height = "300px"
     boxcontact.style.opacity = "1"
+    boxcontact.style.marginTop = "40px"
+
 }
 
 btncontacttwo.onclick = function() {
