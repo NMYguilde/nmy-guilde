@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 let btncontact = document.getElementById("btnContact")
 let btncontacttwo = document.getElementById("btnContactTwo")
 
