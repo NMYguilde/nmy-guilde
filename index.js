@@ -17,3 +17,4 @@ btncontacttwo.onclick = function() {
 btnclose.onclick = function() {
     boxcontact.style.opacity = "0"
     boxcontact.style.height = "0.1px"
+}
