@@ -64,6 +64,7 @@ html, body {
   margin-left: 10px;
   margin-right: 10px;
   text-align: center;
+  padding: 10px;
 }
 
 .since {
@@ -198,6 +199,7 @@ html, body {
 .rct {
   text-align: center;
   font-size: 16px;
+  padding: 10px;
 }
 
 .nsrejoindre {
@@ -262,5 +264,9 @@ html, body {
 
 .mgtop {
   padding-top: 160px;
+}
+
+.pdbottom {
+  padding-bottom: 60px;
 }
 /*# sourceMappingURL=style.css.map */
