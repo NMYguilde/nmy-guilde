@@ -1,630 +1,189 @@
-@media screen and (min-width: 900px) {
-    .bars {
-        display: none !important;
-    }
-    .socials-open {
-        display: none !important;
-    }
-  }
-
-  
-
-  @media screen and (max-width: 900px) {
-      header {
-          flex-direction: column !important;
-          justify-content: center !important;
-          align-items: center !important;
-          width: 100% !important;
-      }
-      .menu {
-          width: 100% !important;
-      }
-      .menu-ol {
-          width: 95% !important;
-          padding: 0px !important;
-          justify-content: space-evenly !important;
-      }
-      .socials {
-          width: 90% !important;
-          border-radius: 4px;
-          top: unset !important;
-          right: unset !important;
-          left: 50%;
-          transform: translate(-50%);
-          justify-content: center !important;
-          background-color: rgba(139, 96, 96, 0.212);
-          height: unset !important;
-          box-shadow: 0 0 25px black !important;
-          padding: 0px !important;
-          transition: 0.4s !important;
-          margin-top: 15px !important;
-          opacity: 0;
-      }
-      .socials-ol {
-          flex-direction: row !important;
-          width: 80% !important;
-        
-      }
-
-      .emplacement-logo {
-        width: 55% !important;
-        height: 155px!important;
-        display: flex!important;
-        justify-content: center!important;
-      }
-      .logo-box {
-          margin-left: 0px !important;
-          margin-top: 20px !important;
-          margin-bottom: 20px !important;
-          width: 180px !important;
-
-      }
-      .menu-li {
-          margin: 0 !important;
-      }
-      .msg {
-          font-size: 22px !important;
-
-      }
-
-  }
-
-  @media screen and (max-width: 900px) {
-      .roster {
-          flex-direction: column !important;
-          height: 100% !important;
-          align-items: flex-start !important;
-      }
-      .page-laguilde {
-          width: 100% !important;
-          height: unset !important;
-      }
-      .titre-page-laguilde {
-          display: none !important;
-      }
-      .center {
-          height: unset !important;
-      }
-      .guilde-under-construction {
-          display: none !important;
-      }
-      .membres {
-          margin-top: 40px !important;
-      }
-      .teams {
-          width: 100% !important;
-          margin-left: 0 !important;
-      }
-      .membres {
-          width: 100% !important;
-          margin-top: 0 !important;
-      }
-      .icon-plus-txt {
-          margin-left: 0 !important;
-          margin-top: 40px !important;
-        
-      }
-      .logo-box {
-          height: unset !important;
-      }
-      .menu {
-          border: 1px solid rgba(136, 0, 0, 0.37) !important;
-          height: 40px !important;
-          margin-bottom: 20px !important;
-          width: 95% !important;
-      }
-  }
-
-
-
 html, body {
-    margin-top: 0px;
-    height: 100%;
-    width: 100%;
-    min-width: 390px !important;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: titillium-web, sans-serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
 }
 
-body {
-    background-image: url("ressources/bg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0px;
+.nav-link {
+  color: black !important;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+.nav-link:active {
+  color: #be0000 !important;
+}
+.nav-link:hover {
+  color: #be0000 !important;
 }
 
-header {
-    width: 100%;
-    height: 155px;
-    display: flex;
-    flex-direction: row;
+.dropdown-item:active {
+  background-color: #be0000 !important;
 }
 
-.socials-open {
-    color: white;
-    font-family: titillium-web, sans-serif;
-
-    font-weight: 400;
-    
-    font-style: normal;
-    font-size: 10px;
-    margin-left: 12px;
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    cursor: pointer;
-
+.dropdown-item:hover {
+  color: #be0000 !important;
 }
 
-.logo-box {
-    background-image: url("ressources/logo.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 230px;
-    margin-left: 40px;
-    background-position: center;
+.navbar-toggler-icon {
+  background-image: url("bars.svg") !important;
+  width: 23px !important;
+  height: 23px !important;
 }
 
-.emplacement-logo {
-    width: 55%;
-    height: 155px;
+.bg-image {
+  background-image: url("bg.png");
+  background-size: cover;
+  background-position: center;
 }
 
-.menu {
-    display: flex;
-    height: 100%;
-    width: 45%;
-    justify-content: center;
-    font-family: titillium-web, sans-serif;
-
-    font-weight: 400;
-    
-    font-style: normal;
-    font-size: 14px;
-    letter-spacing: 0.5px;
-    color: white;
+.container-fluid {
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
 }
 
-.menu-ol {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-between;
-    margin: 0px;
-    padding-left: 0px;
-    padding-right: 40px;
-    align-items: center;
-    flex-wrap: nowrap;
+.discord-icon {
+  background-image: url("discord.png") !important;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  align-items: center !important;
+  height: 22px;
+  width: 22px;
+}
+.discord-icon:hover {
+  background-image: url("discord-hover.png") !important;
 }
 
-.menu-li {
-    display: flex;
-    flex-wrap: nowrap;
-    margin-left: 10px;
-    margin-right: 10px;
-    white-space: nowrap;
-    text-align: center;
-    justify-content: center;
-    height: 40px;
-    align-items: center;
+.enemy {
+  font-size: 52px !important;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: white !important;
+  text-shadow: 0 4px 5px black !important;
+  margin-bottom: 40px !important;
+  margin: 10px;
 }
 
-.menu-li:hover {
-    color: rgb(190, 30, 45);
-    cursor: pointer;
-    transition: 0.3s;
-    border-bottom: 1px solid rgb(190, 30, 45);
+.mmo {
+  color: #f34646 !important;
+  text-shadow: 0 4px 5px black !important;
+  font-size: 22px !important;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
-.bars {
-    background-image: url("ressources/bars.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 20px;
-    width: 20px;
-
+.since {
+  color: #b4b4b4 !important;
+  font-size: 20px;
+  text-shadow: 0 4px 5px black !important;
 }
 
-.menu-drop-down {
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    position: relative;
+.button-width {
+  width: 150px !important;
 }
 
-a {
-    text-decoration: none;
-    color: unset !important;
+.middle-text {
+  flex-direction: row;
 }
 
-a:visited {
-    text-decoration: none;
-    color: unset !important;
+.roster-page {
+  background-color: gray !important;
+  width: 100%;
+  height: 100%;
+  margin-top: 40px;
 }
 
-.membres-teams {
-    position: absolute;
-    left: 80px;
-    display: flex;
-    flex-direction: column;
-    top: 45px;
-    height: 0px;
-    opacity: 0;
-    transition: 0.4s;
-}
-
-.hover:hover {
-    cursor: pointer;
-    color: rgb(190, 30, 45);
-}
-
-.bars:hover {
-    border-bottom: none !important;
-    background-image: url("ressources/bars-hover.png");
-}
-
-.dropdown-icon {
-    background-image: url("ressources/caret.png");
-    background-repeat: no-repeat;
-    background-size: 14px;
-    background-position: right;
-}
-
-.dropdown-icon:hover {
-    background-image: url("ressources/caret-hover.png");
-}
-
-.msg-accueil {
-    color: white;
-    margin-bottom: 15px;
-}
-
-.actif {
-    color: green;
-}
-
-.msg-recrutement {
-    color: rgb(150, 150, 150);
-    font-size: 25px;
-}
-
-.msg-serveur {
-    color: rgb(150, 150, 200);
-    font-size: 20px;
-}
-
-.msg {
-    position: absolute;
-    top: 35%;
-    left: 8%;
-    font-family: titillium-web, sans-serif;
-
-    font-weight: 400;
-    
-    font-style: normal;
-    font-size: 14px;
-    font-size: 42px;
-}
-
-.socials {
-    color: white;
-    position: absolute;
-    top: 20%;
-    right: 0%;
-    height: 250px;
-    padding: 0;
-    padding-right: 20px;
-    display: flex;
-    width: 36px;
-}
-
-.socials-ol {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    height: 100%;
-    padding: 0;
-
-}
-
-.socials-li {
-    height: 16px;
-    width: 36px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    cursor: pointer;
-}
-
-.socials-li:hover {
-    transition: 0.4s;
-}
-
-.steam {
-    background-image: url("ressources/steam.png");
-}
-.steam:hover {
-    background-image: url("ressources/steam-hover.png");
-
-}
-.twitter {
-    background-image: url("ressources/twitter.png");
-}
-
-.twitter:hover {
-    background-image: url("ressources/twitter-hover.png");
-}
-
-.youtube {
-    background-image: url("ressources/youtube.png");
-}
-
-.widgetHeader {
-    background-color: red !important;
-}
-
-.discord:hover {
-    text-decoration: none !important;
-    border-bottom: none !important;
-}
-
-.youtube:hover {
-    background-image: url("ressources/youtube-hover.png");
-}
-.instagram {
-    background-image: url("ressources/instagram.png");
-}
-
-.instagram:hover {
-    background-image: url("ressources/instagram-hover.png");
-}
-
-.facebook {
-    background-image: url("ressources/facebook.png");
-}
-
-.facebook:hover {
-    background-image: url("ressources/facebook-hover.png");
-}
-
-.twitch {
-    background-image: url("ressources/twitch.png");
-}
-
-.twitch:hover {
-    background-image: url("ressources/twitch-hover.png");
-}
-
-.page-laguilde {
-    width: 80%;
-    height: 80%;
-    background-color: rgba(0, 0, 0, 0.849);
-    transform: translate(-100%);
-    transition: 0.4s;
-    opacity: 0;
-    box-shadow: 0 0 25 black; 
-    border-radius: 5px;
+.bottom-socials {
+  padding: 0 !important;
 }
 
 .center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 80%;
+  width: 100%;
+  text-align: center;
+  font-size: 32px;
+  color: #f34646;
 }
 
-.titre-page-laguilde {
-    color: white;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    font-family: titillium-web, sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 20px;
-    letter-spacing: 0.7px;
+.text-align-center {
+  text-align: center;
+  width: 100% !important;
 }
 
-.discord-div {
-    position: absolute;
-    right: 10%;
-    top: 25%;
-    opacity: 0;
-    height: 0px;
-    transition: 0.4s;
+#boxContact {
+  height: 1px;
+  opacity: 0;
+  transition: 0.4s;
 }
 
-.discord-close {
-    height: 29px;
-    width: 120px;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    top: 103%;
-    background-image: url("ressources/close.png");
-    background-size: contain;
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.582);
+.close {
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 3px;
+  border: 1px solid #f34646;
+}
+.close:hover {
+  transition: 0.4s;
+  background-color: #f34646;
+  color: white;
 }
 
-.discord-close:hover {
-    background-image: url("ressources/close-hover.png");
-    cursor: pointer;
+.page-roster {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-.membres {
-    height: 80%;
-    width: 40%;
+.roster-icon-plus-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 20px;
+  padding: 40px;
 }
 
-.teams {
-    height: 80%;
-    width: 40%;
-    background-color: rgba(26, 26, 26, 0.5);
-
+.wowraiders {
+  color: white;
+  margin-left: 20px;
 }
 
-.roster {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    font-family: titillium-web, sans-serif;
-    font-weight: 400;
-    font-style: normal;
+.raidersmembres {
+  list-style-type: none;
+  width: 80%;
 }
 
-.membres-txt {
-
-    font-size: 24px;
-    color: white;
-    margin-left: 20px;
+.box-roster {
+  width: 80%;
 }
 
-.ol-membres,
-.ol-teams {
-    list-style: none;
-    color: white;
-
+.li-style {
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+  width: 100%;
+  border-radius: 4px;
+  margin: 5px;
 }
 
-.li-membres,
-.li-teams {
-    font-size: 14px;
-    margin-top: 4px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.tdark {
+  color: #969696;
 }
 
-.li-teams:hover {
-    text-decoration: underline;
-    cursor: pointer;
+.bolder {
+  font-weight: bold;
 }
 
-.li-membres:hover {
-    text-decoration: underline;
-    cursor: pointer;
+.mgleft {
+  margin-left: 10px;
 }
 
-.guildroles {
-    color:rgb(200, 0, 0);
-    font-size: 12px;
-    font-weight: 600;
-    margin-left: 5px;
-}
-
-
-.pvp-icon {
-    background-image: url("ressources/pvp-icon.png");
-    width: 25px;
-    height: 25px;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.icon-plus-txt {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-}
-
-.teams-icon {
-    background-image: url("ressources/teams-icon.png");
-    width: 25px;
-    height: 25px;
-    background-size: contain;
-    background-repeat: no-repeat;
-
-}
-
-.simple-line {
-    width: 100%;
-    display: flex;
-
-    justify-content: center;
-}
-
-.line {
-    background-color: rgb(200, 0, 0);
-    width: 50%;
-    height: 1px;
-}
-
-.first-team {
-    font-size: 17px;
-}
-
-.redpill {
-    color: rgb(200, 0, 0);
-    font-style: italic;
-}
-
-.shadowhunter, .blader {
-    color: rgb(148, 0, 216);
-    font-style: italic;
-    font-size: 12px;
-    font-weight: 600;
-    margin-left: 10px;
-}
-
-.shadowhunter:hover {
-    text-decoration: none !important;
-}
-
-.sorcerer {
-    color: rgb(185, 0, 0);
-    font-style: italic;
-    font-size: 12px;
-    font-weight: 600;
-    margin-left: 10px;
-}
-
-.paladin {
-    color: rgb(0, 67, 167);
-    font-style: italic;
-    font-size: 12px;
-    font-weight: 600;
-    margin-left: 10px;
-}
-
-.martial {
-    color: rgb(0, 102, 88);
-    font-style: italic;
-    font-size: 12px;
-    font-weight: 600;
-    margin-left: 10px;
-}
-
-.tireur {
-    color: rgb(218, 141, 0);
-    font-style: italic;
-    font-size: 12px;
-    font-weight: 600;
-    margin-left: 10px;
-
-}
-
-.undefined {
-    color: rgb(255, 255, 255);
-    font-style: italic;
-    font-size: 12px;
-    font-weight: 600;
-    margin-left: 10px;
-}
-
-.test {
-    padding-left: 3px;
-    padding-right: 3px;
-}
-
-.sh-icon {
-    width: 14px;
-    height: 14px;
-    background-size: contain;
-    margin-right: 10px;
-}
+/*# sourceMappingURL=style.css.map */

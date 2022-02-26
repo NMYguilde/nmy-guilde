@@ -1,48 +1,21 @@
-document.getElementById('pageLaGuilde');
-document.getElementById('menuLaGuilde');
-document.getElementById('msg');
-document.getElementById('menuAccueil');
-document.getElementById('menuDiscord');
-document.getElementById('discordDiv');
-document.getElementById('discordClose');
-document.getElementById('socialsOpen');
-document.getElementById('socials');
+let btncontact = document.getElementById("btnContact")
+let btncontacttwo = document.getElementById("btnContactTwo")
 
-menuLaGuilde.onclick = function () {
-  pageLaGuilde.style.transform = 'translate(0%)';
-  pageLaGuilde.style.opacity = '1';
-  msg.style.display = 'none';
-  discordDiv.style.height = '0px';
-  discordDiv.style.opacity = '0';
-};
+let boxcontact = document.getElementById("boxContact")
+let btnclose = document.getElementById("close")
 
-menuAccueil.onclick = function () {
-  pageLaGuilde.style.transform = 'translate(-100%)';
-  pageLaGuilde.style.opacity = '0';
-  msg.style.display = 'block';
-  discordDiv.style.height = '0px';
-  discordDiv.style.opacity = '0';
-};
-
-function showHide() {
-  if (membresTeams.style.opacity == '0') {
-    membresTeams.style.opacity = '1';
-  }
+btncontact.onclick = function() {
+    boxcontact.style.height = "300px"
+    boxcontact.style.opacity = "1"
 }
 
-menuDiscord.onclick = function () {
-  discordDiv.style.height = '500px';
-  discordDiv.style.opacity = '1';
-  pageLaGuilde.style.transform = 'translate(-100%)';
-  pageLaGuilde.style.opacity = '0';
-};
+btncontacttwo.onclick = function() {
+    boxcontact.style.height = "300px"
+    boxcontact.style.opacity = "1"
+}
 
-discordClose.onclick = function () {
-  discordDiv.style.height = '0px';
-  discordDiv.style.opacity = '0';
-};
+btnclose.onclick = function() {
+    boxcontact.style.opacity = "0"
+    boxcontact.style.height = "0.1px"
 
-socialsOpen.onclick = function () {
-  socials.style.opacity = '1';
-  socials.style.width = '95% !important';
-};
+}

@@ -6,99 +6,132 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/dbs6bxg.css">
-    <link rel="icon" href="ressources/favicon.png">
-    <script src="https://kit.fontawesome.com/d1eb31d158.js" crossorigin="anonymous"></script>
-    <title>ENEMY - Lost Ark</title>
-
+    <link rel="stylesheet" href="bp.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="class.css">
+    <script src="https://kit.fontawesome.com/7515133b21.js" crossorigin="anonymous"></script>
+    <!--Bootstrap CSS link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>NMY Guilde</title>
 </head>
-<body>
+
+<body class="bg-light">
     <header>
-        <div class="emplacement-logo">
-            <div class="logo-box"></div>
-        </div>
-        <div class="menu">
-            <ol class="menu-ol">
-                <li id="menuAccueil" class="menu-li">ACCUEIL</li>
-                <li id="menuLaGuilde" class="menu-li">ROSTER</li>
-                <a target="_blank" href="https://forms.gle/4hW7Gp5S3JLkNXLm8"><li class="menu-li">NOUS REJOINDRE</li></a>
-                <li class="menu-li">CONTACT</li>
-                <li class="menu-li" id="menuDiscord" class="discord"><img src="ressources/discord.png" alt="icon-discord"></li>
-            </ol>
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-light fixed-top  shadow">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="/nmy-vertical.png" alt="Logo" height="
+                +">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Roster
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Lost Ark</a></li>
+                          <li><a class="dropdown-item" href="#">World of Warcraft</a></li>
+                          <li>
+                          </li>
+                        </ul>
+                      </li>
+                  <li class="nav-item">
+                    <a target="_blank" class="nav-link active" aria-current="page" href="https://docs.google.com/forms/d/e/1FAIpQLSe815Os7R8izvVKVpVBNhIl7sCOnAUfej_atrRG-cHTHyZMJQ/viewform">Nous rejoindre</a>
+                  </li>
+                  <li id="btnContact" class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><div class="discord-icon"></div></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
-<div id="msg" class="msg">
-    <h1 class="msg-accueil">
-        BIENVENUE ! <br>
-        GUILDE ENEMY
-    </h1>
-    <h2 class="msg-recrutement"><span class="actif">RECRUTEMENT ACTIF</span></h2>
-    <h3 class="msg-serveur">SERVEUR : TRIXION</h3>
-</div>
-<div style="width: 100%;">
-    <span id="socialsOpen" class="socials-open">CLICK HERE FOR SOCIALS</span>
-</div>
-<div id="socials" class="socials">
-    <ol class="socials-ol">
-        <a target="_blank" href="https://www.twitch.tv/nmy_efsan"><li class="socials-li twitch"></li></a>
-        <a target="_blank" href="https://steamcommunity.com/id/nawflashback/"><li class="socials-li steam"></li></a>
-        <li class="socials-li twitter"></li>
-        <li class="socials-li youtube"></li>
-        <li class="socials-li instagram"></li>
-        <li class="socials-li facebook"></li>
-    </ol>
-</div>
-
-<div id="discordDiv" class="discord-div">
-    <div id="discordClose" class="discord-close"></div>
-    <iframe src="https://discord.com/widget?id=939999420487979028&theme=dark" width="300" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-</div>
-<div class="center">
-<div id="pageLaGuilde" class="page-laguilde">
-        <h1 class="titre-page-laguilde">ENEMY</h1>
-    <div class="roster">
-        <div class="membres">
-            <div class="icon-plus-txt">
-                <div class="teams-icon"></div>
-                <h1 class="membres-txt">MEMBRES</h1>
+    <div class="w-100 h-100 bg-image col">
+        <div class="h-100 d-flex align-items-center justify-content-center flex-column">
+            <h1 class="enemy">NMY(Enemy)</h1>
+            <h2 class="mmo">French Lost Ark and World of Warcraft Guild</h2>
+            <h3 class="since">Since 2011</h3><br><br>
+            <div class="middle-text d-flex justify-content-around">
+                <button type="button" class="m-3 button-width btn btn-outline-danger">REJOIGNEZ-NOUS</button>
+                <button id="btnContactTwo" type="button" class="m-3 button-width btn btn-outline-secondary">Contact</button>
             </div>
-            <ol class="ol-membres">
-                <li class="li-membres"><img class="sh-icon" src="ressources/shadowhunter-icon.png" alt="">Efsan<span class="test shadowhunter">Shadow Hunter</span><span class="guildroles">(GM)</span></li>
-                <li class="li-membres"><img class="sh-icon" src="ressources/soulfist-icon.png" alt="">Sorrowsoul </span><span class="martial">Soulfist</span><span class="guildroles">(Off. PvE)</li>
-                <li class="li-membres"><img class="sh-icon" src="ressources/sorcerer-icon.png" alt="">Tilik<span class="sorcerer">Sorcerer</span><span class="guildroles">(Off. PvP)</span></li>
-                <li class="li-membres"><img class="sh-icon" src="ressources/deathblade-icon.png" alt="">Shaios<span class="blader">Deathblade</span></li>
-                <li class="li-membres"><img class="sh-icon" src="ressources/pal-icon.png" alt="">Chocc<span class="paladin">Paladin</span></li>
-                <li class="li-membres"><img class="sh-icon" src="ressources/berserker-icon.png" alt="">Kaann<span class="paladin">Berserker</span></li>
-                <li class="li-membres"><img class="sh-icon" src="ressources/berserker-icon.png" alt="">Stayolo<span class="paladin">Berserker</span></li>
-                <li class="li-membres"><img class="sh-icon" src="ressources/pal-icon.png" alt="">Lunessance <span class="paladin">Paladin</span></li>
-                <li class="li-membres"><img class="sh-icon" src="ressources/arti-icon.png" alt="">Braezilian<span class="tireur">Artillerist</span></li>
-                <li class="li-membres"><img class="sh-icon" src="ressources/wardancer-icon.png" alt="">Nagyung<span class="martial">Wardancer</span></li>
-                <li class="li-membres"><img class="sh-icon" src="ressources/bard-icon.png" alt="">Nizatsu<span class="sorcerer">Bard</span></li>
-                <li class="li-membres"><img class="sh-icon" src="ressources/bard-icon.png" alt="">Vorgeos<span class="sorcerer">Bard</span></li>
-            </ol>
-        </div>
-        <div class="membres-txt teams">
-            <div class="icon-plus-txt">
-                <div class="pvp-icon"></div>
-                <h1 class="membres-txt">TEAMS 3c3</h1>
+            <span id="boxContact" style="
+            margin-top: 40px;
+            border: 1px solid rgb(243, 70, 70);
+            color: white;
+            background-color: rgba(19, 19, 19, 0.678);
+            padding: 20px;
+            border-radius: 4px;
+            box-shadow: 0 0 20px black;"><span style="color: rgb(131, 131, 131);"><i class="center fa-brands fa-discord"></i></span>
+            <br>
+            <br>
+            <i class="text-align-center">efsaN#7737 <span style="padding-left: 20px; padding-right: 20px;">l</span> Stayolo#1016</i>
+            <br>
+            <br>
+            <span style="color: rgb(131, 131, 131)"><i class="center fa-brands fa-battle-net"></i></span>
+            <br>
+            <br>
+            <i class="text-align-center">efsaN#2533 <span style="padding-left: 20px; padding-right: 20px;">l</span> Stay#2846</i>
+            <br>
+            <div class="d-flex justify-content-center align-items center">
+              <span id="close" class="close"><i class="fa-solid fa-xmark"></i></span>
             </div>
-
-            <ol class="ol-teams">
-                <h3 class="first-team">Team <span class="redpill">"RED PILL"</span></h3>
-                <li class="li-teams"><img class="sh-icon" src="ressources/shadowhunter-icon.png" alt="">Efsan <span class="shadowhunter">Shadow Hunter</span></li>
-                <li class="li-teams"><img class="sh-icon" src="ressources/sorcerer-icon.png" alt="">Tilik <span class="sorcerer">Sorcerer</span></li>
-                <li class="li-teams"><img class="sh-icon" src="ressources/pal-icon.png" alt="">Lunessance <span class="paladin">Paladin</span></li>
-            </ol>
-            <div class="simple-line">
-                <div class="line"></div>
-            </div>
-            <ol></ol>
+          </span>
         </div>
     </div>
-</div>
-</div>
-<div style="position: absolute; text-align: center; bottom: 2%; left: 50%; transform: translate(-50%); text-shadow: 0 0 25 black; color: rgb(200, 0, 0); font-size: 12px; font-family: Verdana, Geneva, Tahoma, sans-serif; letter-spacing: 3px;" class="guilde-under-construction">
-    WEBSITE EN CONSTRUCTION
-</div>
+
+    <nav class="bottom-socials navbar bg-light fixed-bottom">
+      <div class="container-fluid">
+        <div class="navbar bottom-socials">
+          <ul class="navbar-nav d-flex flex-row">
+                <li class="nav-item">
+                  <a class="nav-link" href="#" role="button">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" role="button">
+                    <i class="fa-brands fa-discord"></i>
+                  </a>
+                </li>
+                <li class="d-flex align-items-center nav-item"><a target="_blank" href="https://www.ethantaylan.com" class="nav-link">Blacksea Studio</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="text-white page-roster">
+      <div class="box-roster">
+        <div class="roster-icon-plus-text">
+          <i class="fa fa-users" aria-hidden="true"></i>
+          <span class="wowraiders">WoW Raiders</span>
+        </div>
+        <ol class="raidersmembres">
+          <li class="bolder"><i class="fa-solid fa-shield"></i><span class="mgleft"></span>TANKS</li>
+          <li class="li-style dh">"efsaN" <span class="tdark">VDH</span><span style="font-size: 12px; margin-left: 10px; color: red;">GM</span></li>
+          <li class="li-style drood">"Daniel" <span class="tdark">Guardian</span><span style="font-size: 12px; margin-left: 10px; color: red;">Officier</span></li>
+          <hr>
+          <li class="bolder"><i class="fa-solid fa-hand-holding-medical"></i><span class="mgleft"></span>HEALS</li>
+          <li class="li-style shammy">"Choc" <span class="tdark">RSHAM</span><span style="font-size: 12px; margin-left: 10px; color: red;">Officier</span></li>
+          <li class="li-style">"?" <span class="tdark"></li>
+          <li class="li-style">"?" <span class="tdark"></li>
+          <li class="li-style">"?" <span class="tdark"></li>
+          <li class="li-style">"?" <span class="tdark"></li>
+          <hr>
+          <li class="bolder"><i class="fa-solid fa-hand-fist"></i><span class="mgleft"></span>DPS</li>
+          <li class="li-style hunter">"Stayolo" <span class="tdark">BM/MM</span><span style="font-size: 12px; margin-left: 10px; color: red;">Officier</span></li>
+          <hr>
+        </ol>
+      </div>
+    </div>
+<!--Bootstrap JS Bundle-->
+<script src="index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
-<script type="text/javascript" src="index.js"></script>
 </html>
