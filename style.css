@@ -168,6 +168,8 @@ html, body {
   width: 100%;
   border-radius: 4px;
   margin: 5px;
+  flex-wrap: nowrap !important;
+  white-space: nowrap;
 }
 
 .tdark {
