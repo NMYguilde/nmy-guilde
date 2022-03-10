@@ -153,6 +153,7 @@ html, body {
 .raidersmembres {
   list-style-type: none;
   width: 80%;
+  margin-right: 0px !important;
 }
 
 .box-roster {
@@ -240,5 +241,13 @@ html, body {
 .pdbottom {
   padding-bottom: 60px;
 }
+
+
+.box-progress {
+  width: 50%;
+  background-color: red !important;
+}
+
+
 
 /*# sourceMappingURL=style.css.map */
