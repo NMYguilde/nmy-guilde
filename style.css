@@ -37,7 +37,6 @@ html main, body main {
 
 html main .logo, body main .logo {
   width: 250px;
-  height: 250px;
 }
 
 html main p, body main p {
@@ -79,12 +78,13 @@ html main p, body main p {
   margin: 10px;
   width: 100px;
   text-align: center;
+  -webkit-box-shadow: 0 10px 40px black;
+          box-shadow: 0 10px 40px black;
 }
 
 .btn-rejoindre {
   padding: 10px;
   border: 1px solid #c80000;
-  border-radius: 3px;
   color: #c80000 !important;
 }
 
@@ -96,7 +96,6 @@ html main p, body main p {
 .btn-contact {
   padding: 10px;
   border: 1px solid #646464;
-  border-radius: 3px;
   color: #646464 !important;
 }
 
