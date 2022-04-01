@@ -15,7 +15,7 @@ html, body {
 }
 
 a {
-  color: white !important !important;
+  color: white !important;
   text-decoration: none !important;
 }
 
@@ -159,7 +159,7 @@ header {
   height: 350px;
   background-position: top;
   background-size: cover;
-  background-repeat: none;
+  background-repeat: no-repeat;
   color: white;
   border-bottom: 1px solid #4b4b4b;
 }
@@ -577,5 +577,15 @@ header {
   -webkit-filter: saturate(0);
           filter: saturate(0);
   opacity: 0.5;
+}
+
+.diff-title {
+  margin: 0px !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=style.css.map */
