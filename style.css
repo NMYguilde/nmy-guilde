@@ -52,6 +52,7 @@ header {
           justify-content: center;
   width: 100%;
   font-weight: 400;
+  white-space: nowrap;
 }
 
 .navbar-ul {
@@ -72,6 +73,11 @@ header {
 
 .navbar-li {
   padding: 10px;
+}
+
+.navbar-li:hover {
+  cursor: pointer;
+  color: #ed3838 !important;
 }
 
 .navbar-socials {
@@ -105,6 +111,11 @@ header {
 .navbar-socials-li {
   padding: 15px;
   color: #7d7d7d;
+}
+
+.navbar-socials-li:hover {
+  color: white;
+  cursor: pointer;
 }
 
 .center-box {
@@ -252,7 +263,7 @@ header {
 .twitch-box .twitch-embed {
   height: 300px;
   width: 400px;
-  background-color: gray;
+  background-color: #191919;
 }
 
 .box-progress {
@@ -329,6 +340,16 @@ header {
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
   cursor: pointer;
+}
+
+.box-progress .all-boss-mobile {
+  padding-left: 40px !important;
+}
+
+.box-progress .all-boss-mobile-ul {
+  list-style: none !important;
+  padding: 5px !important;
+  width: 40%  !important;
 }
 
 .active {
@@ -415,6 +436,10 @@ header {
   padding: 5px;
 }
 
+.green {
+  color: green;
+}
+
 .box-join-us {
   width: 100%;
   height: auto;
@@ -488,5 +513,17 @@ header {
   cursor: pointer;
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
+}
+
+#raidNm {
+  display: none;
+}
+
+#raidMm {
+  display: none;
+}
+
+.uncheck {
+  color: #5a5a5a;
 }
 /*# sourceMappingURL=style.css.map */

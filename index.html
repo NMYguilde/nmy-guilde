@@ -34,7 +34,7 @@
         </nav>
     </header>
     <div class="center-box">
-        <img src="mascotte-center-box.png" alt="" srcset="">
+        <img class="mascotte-center-box" src="mascotte-center-box.png" alt="" srcset="">
         <span class="enemy">ENEMY</span>
     </div>
     <div class="box-title">
@@ -62,7 +62,7 @@
                 </span>
                 <div class="en-savoir-plus">
                     <span class="more-button">EN SAVOIR PLUS</span>
-                    <i class="arrow-padding fa-solid fa-arrow-right"></i>
+                    <i class="padding arrow-padding fa-solid fa-arrow-right"></i>
                 </div>
             </div>
         </div>
@@ -71,7 +71,7 @@
                 <i class="primRed fa-solid fa-video"></i>
                 <h3 class="padding ">LIVE TWITCH</h3>
             </div>
-            <div class="twitch-embed">twitch box</div>
+            <div class="twitch-embed"></div>
         </div>
     </div>
     <div class="box-progress">
@@ -82,9 +82,9 @@
     <h3 class="second-title">SEPULCHER</h3>
     <div class="difficulty">
         <ul class="difficulty-ul">DIFFICULTIES : 
-            <li class="difficulty-li active">NORMAL</li>  
-            <li class="difficulty-li">HEROIC</li>  
-            <li class="difficulty-li">MYTHIC</li>  
+            <li id="btnNormal" class="difficulty-li">NORMAL</li>  
+            <li id="btnHeroic" class="difficulty-li active">HEROIC</li>  
+            <li id="btnMythic" class="difficulty-li">MYTHIC</li>  
         </ul>
     </div>
     <div class="all-boss">
@@ -99,6 +99,51 @@
         <div class="box-boss lords">Lords</div>
         <div class="box-boss rygelon">Rygelon</div>
         <div class="box-boss jailer">Jailer</div>
+    </div>
+    <div id="raidNm" class="all-boss-mobile">
+        <ul>
+            <li class="all-boss-mobile-ul">Guardian <i class="green fa-solid fa-check"></i></li>
+            <li class="all-boss-mobile-ul">Skolex <i class="green fa-solid fa-check"></i></li>
+            <li class="all-boss-mobile-ul">Xy'mox <i class="green fa-solid fa-check"></i></li>
+            <li class="all-boss-mobile-ul">Dausegne <i class="green fa-solid fa-check"></i></li>
+            <li class="all-boss-mobile-ul">Pantheons <i class="green fa-solid fa-check"></i></li>
+            <li class="all-boss-mobile-ul">Lihuvim <i class="green fa-solid fa-check"></i></li>
+            <li class="all-boss-mobile-ul">Halondrus <i class="green fa-solid fa-check"></i></li>
+            <li class="all-boss-mobile-ul">Anduin <i class="green fa-solid fa-check"></i></li>
+            <li class="all-boss-mobile-ul">Lords <i class="green fa-solid fa-check"></i></li>
+            <li class="all-boss-mobile-ul">Rygelon <i class="green fa-solid fa-check"></i></li>
+            <li class="all-boss-mobile-ul">Jailer <i class="green fa-solid fa-check"></i></li>
+        </ul>
+    </div>
+    <div id="raidHm" class="all-boss-mobile">
+        <ul>
+            <li class="all-boss-mobile-ul">Guardian <i class="green fa-solid fa-check"></i></li>
+            <li class="all-boss-mobile-ul">Skolex <i class="green fa-solid fa-check"></i></li>
+            <li class="all-boss-mobile-ul">Xy'mox <i class="green fa-solid fa-check"></i></li>
+            <li class="all-boss-mobile-ul">Dausegne <i class="green fa-solid fa-check"></i></li>
+            <li class="all-boss-mobile-ul">Pantheons <i class="green fa-solid fa-check"></i></li>
+            <li class="all-boss-mobile-ul">Lihuvim <i class="green fa-solid fa-check"></i></li>
+            <li class="all-boss-mobile-ul">Halondrus <i class="green fa-solid fa-check"></i></li>
+            <li class="all-boss-mobile-ul">Anduin <i class="green fa-solid"></i> 55%</li>
+            <li class="uncheck all-boss-mobile-ul">Lords <i class="green fa-solid"></i></li>
+            <li class="uncheck all-boss-mobile-ul">Rygelon <i class="green fa-solid"></i></li>
+            <li class="uncheck all-boss-mobile-ul">Jailer <i class="green fa-solid"></i></li>
+        </ul>
+    </div>
+    <div id="raidMm" class="all-boss-mobile">
+        <ul>
+            <li class="uncheck all-boss-mobile-ul">Guardian <i class="green fa-solid"></i></li>
+            <li class="uncheck all-boss-mobile-ul">Skolex <i class="green fa-solid"></i></li>
+            <li class="uncheck all-boss-mobile-ul">Xy'mox <i class="green fa-solid"></i></li>
+            <li class="uncheck all-boss-mobile-ul">Dausegne <i class="green fa-solid"></i></li>
+            <li class="uncheck all-boss-mobile-ul">Pantheons <i class="green fa-solid"></i></li>
+            <li class="uncheck all-boss-mobile-ul">Lihuvim <i class="green fa-solid"></i></li>
+            <li class="uncheck all-boss-mobile-ul">Halondrus <i class="green fa-solid"></i></li>
+            <li class="uncheck all-boss-mobile-ul">Anduin <i class="green fa-solid"></i></li>
+            <li class="uncheck all-boss-mobile-ul">Lords <i class="green fa-solid"></i></li>
+            <li class="uncheck all-boss-mobile-ul">Rygelon <i class="green fa-solid"></i></li>
+            <li class="uncheck all-boss-mobile-ul">Jailer <i class="green fa-solid"></i></li>
+        </ul>
     </div>
 </div>
 <div class="box-title">

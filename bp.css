@@ -1,2 +1,106 @@
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    .logo-box {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .logo{
+        padding: 0px !important;
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+    }
+    .navbar {
+        width: 90% !important;
+    }
+    .navbar-socials {
+        justify-content: center !important;
+        padding-top: 0px !important;
+        padding-right: 0px !important;
+    }
+    .center-box {
+        height: calc(15rem - 3rem) !important;
+    }
+    .news-box {
+        flex-direction: column !important;
+    }
+    .news-card {
+        padding-bottom: 20px !important;
+    }
+    .difficulty {
+        width: 100% !important;
+        padding-left: 0px !important;
+        display: flex !important;
+        justify-content: center !important;
+    }
+    .difficulty-ul {
+        width: 90% !important;
+        padding-left: 0px !important;
+    }
+    .all-boss {
+        display: none !important;
+    }
+    .box-title {
+        padding: 20px !important;
+    }
+    .second-title {
+        padding-left: 40px !important;
+    }
+    .center-box-roster {
+        width: 100% !important;
+        border: none;
+        flex-direction: column;
+    }
+    .role-title {
+        width: 100% !important;
+    }
+    .roster {
+        width: 80% !important;
+    }
+    hr {
+        display: none !important;
+    }
+    .icon-plus-title {
+        justify-content: center !important;
+    }
+    .role-ul {
+        text-align: left !important;
+    }
+    .twitch-embed {
+        width: 200px !important;
+    }
+    .mascotte-center-box {
+        width: 70px !important;
+    }
+    .enemy {
+        font-size: 50px !important;
+    }
+    .buttons {
+        width: 100% !important;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .btn-discord {
+        padding: 10px !important;
+    }
+    .padding-roster {
+        padding-left: 40px !important;
+    }
+}
+
+@media screen and (max-width: 400px) {
+.difficulty-ul {
+    display: flex !important;
+    flex-direction: column !important;
+}
+.difficulty-li {
+    width: 100% !important;
+    text-align: center !important;
+    margin: 4px !important;
+}
 }
