@@ -5,8 +5,16 @@ let btnMythic = document.getElementById("btnMythic")
 let raidNm = document.getElementById("raidNm")
 let raidHm = document.getElementById("raidHm")
 let raidMm = document.getElementById("raidMm")
+let desktopRaidNm = document.getElementById("desktopRaidNm")
+let desktopRaidHm = document.getElementById("desktopRaidHm")
+let desktopRaidMm = document.getElementById("desktopRaidMm")
+
+
 
 btnNormal.onclick = function() {
+    desktopRaidNm.style.display ="flex"
+    desktopRaidHm.style.display ="none"
+    desktopRaidMm.style.display ="none"
     raidNm.style.display = "block"
     raidHm.style.display ="none"
     raidMm.style.display ="none"
@@ -16,6 +24,9 @@ btnNormal.onclick = function() {
 }
 
 btnHeroic.onclick = function() {
+    desktopRaidNm.style.display ="none"
+    desktopRaidHm.style.display ="flex"
+    desktopRaidMm.style.display ="none"
     raidNm.style.display = "none"
     raidHm.style.display ="block"
     raidMm.style.display ="none"
@@ -25,6 +36,9 @@ btnHeroic.onclick = function() {
 }
 
 btnMythic.onclick = function() {
+    desktopRaidNm.style.display ="none"
+    desktopRaidHm.style.display ="none"
+    desktopRaidMm.style.display ="flex"
     raidNm.style.display = "none"
     raidHm.style.display ="none"
     raidMm.style.display ="block"
