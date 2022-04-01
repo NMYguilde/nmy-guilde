@@ -34,6 +34,10 @@ a:visited {
   text-decoration: none !important;
 }
 
+.link:active:hover {
+  color: #ed3838 !important;
+}
+
 header {
   width: 100%;
   height: auto;
