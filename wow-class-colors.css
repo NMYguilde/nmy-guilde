@@ -1,0 +1,42 @@
+.priest {
+    color: #FFFFFF;
+}
+.warlock {
+    color: #9482C9
+}
+.rogue {
+    color: #FFF569;
+}
+
+.druid {
+    color: #FF7D0A;
+}
+
+.monk {
+    color: #00FF96;
+}
+.demon_hunter {
+    color: #A330C9;
+}
+
+.hunter {
+   color: #ABD473;
+}
+.shaman {
+    color: #0070DE;
+}
+
+.death_knight{
+    color:  #C41F3B;
+}
+
+.warrior {
+    color: #C79C6E;
+}
+.paladin{
+    color: #F58CBA;
+}
+
+.mage {
+    color: #3FC7EB
+}
