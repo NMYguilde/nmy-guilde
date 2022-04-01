@@ -15,7 +15,7 @@ html, body {
 }
 
 a {
-  color: white !important !important;
+  color: white !important;
   text-decoration: none !important;
 }
 
@@ -159,7 +159,7 @@ header {
   height: 350px;
   background-position: top;
   background-size: cover;
-  background-repeat: none;
+  background-repeat: no-repeat;
   color: white;
   border-bottom: 1px solid #4b4b4b;
 }
