@@ -43,6 +43,9 @@
         padding-left: 0px !important;
         display: flex !important;
         justify-content: center !important;
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center;
     }
     .difficulty-ul {
         width: 90% !important;
@@ -109,5 +112,7 @@
     width: 100% !important;
     text-align: center !important;
     margin: 4px !important;
+    width: 80% !important;
+    
 }
 }

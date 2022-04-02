@@ -15,7 +15,7 @@ html, body {
 }
 
 a {
-  color: white !important !important;
+  color: #7D7D7D !important;
   text-decoration: none !important;
 }
 
@@ -36,6 +36,16 @@ a:visited {
 
 .link:active:hover {
   color: #ed3838 !important;
+}
+
+.link-socials {
+  text-decoration: none !important;
+  color: #7D7D7D !important;
+}
+
+.link-socials:active {
+  color: unset !important;
+  text-decoration: none !important;
 }
 
 header {
