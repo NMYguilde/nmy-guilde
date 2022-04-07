@@ -8,14 +8,15 @@ let raidMm = document.getElementById("raidMm")
 let desktopRaidNm = document.getElementById("desktopRaidNm")
 let desktopRaidHm = document.getElementById("desktopRaidHm")
 let desktopRaidMm = document.getElementById("desktopRaidMm")
-
+let btnNavbar = document.getElementById("btnNavbar")
+let mobileNavbar = document.getElementById("mobileNavbar")
 
 
 btnNormal.onclick = function() {
     desktopRaidNm.style.display ="flex"
     desktopRaidHm.style.display ="none"
     desktopRaidMm.style.display ="none"
-    raidNm.style.display = "block"
+    raidNm.style.display = "flex"
     raidHm.style.display ="none"
     raidMm.style.display ="none"
     btnNormal.classList.add("active")
@@ -28,7 +29,7 @@ btnHeroic.onclick = function() {
     desktopRaidHm.style.display ="flex"
     desktopRaidMm.style.display ="none"
     raidNm.style.display = "none"
-    raidHm.style.display ="block"
+    raidHm.style.display ="flex"
     raidMm.style.display ="none"
     btnHeroic.classList.add("active")
     btnNormal.classList.remove("active")
@@ -41,10 +42,15 @@ btnMythic.onclick = function() {
     desktopRaidMm.style.display ="flex"
     raidNm.style.display = "none"
     raidHm.style.display ="none"
-    raidMm.style.display ="block"
+    raidMm.style.display ="flex"
     btnHeroic.classList.remove("active")
     btnNormal.classList.remove("active")
     btnMythic.classList.add("active")
 }
 
+btnNavbar.onclick = function() {
+    mobileNavbar.classList.toggle("open")
 
+}
+
+console.log(btnNavbar)

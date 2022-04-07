@@ -13,30 +13,45 @@ html, body
     color: white
     scroll-behavior: smooth
 
-a
-    color: unset !important
-    text-decoration: none !important
+.line
+    height: 1px
+    width: 80%
+    background-color: rgb(20, 20, 20)
+    margin-top: 4px
+    margin-bottom: 4px
 
-a:visited
-    color: unset !important
-    text-decoration: none !important
-
-.link
-    text-decoration: none !important
-    color: white !important
-    &:active
-        color: unset !important
-        text-decoration: none !important
-        &:hover
-            color: $primaryRed !important
-
+.flex-start
+    display: flex
+    align-items: flex-start
+    justify-content: flex-start
+    
 .link-socials
+    color: #7D7D7D !important
+
+.link-socials:hover
+    color: white !important
+
+.link-socials:visited
     text-decoration: none !important
     color: #7D7D7D !important
-    &:active
-        color: unset !important
-        text-decoration: none !important
 
+a
+    text-decoration: none !important
+
+.link:hover
+    color: $primaryRed !important
+
+a:visited 
+    text-decoration: none !important
+    color: white !important 
+ 
+.open
+    visibility: visible !important
+    opacity: 1 !important
+    height: auto !important
+
+.margin-right
+    margin-right: 20px !important
 
 header
     width: 100%
@@ -49,7 +64,7 @@ header
 .logo-box
     width: 100%
     .logo    
-        padding-left: 20px
+        padding-left: 20px !important
         padding-bottom: 5px
         padding-top: 5px  
 .navbar
@@ -59,6 +74,10 @@ header
     width: 100%
     font-weight: 400
     white-space: nowrap
+    visibility: hidden
+    transition: height 0.4s, visibility 0s, opacity 0.4s, 
+    opacity: 0
+    height: 0px
     &-ul
         width: 100%
         list-style: none
@@ -68,6 +87,8 @@ header
         padding-left: 0px
     &-li
         padding: 10px
+        align-items: center !important
+
         &:hover
             cursor: pointer
             color: $primaryRed !important
@@ -138,9 +159,13 @@ header
             cursor: pointer
     .news-image
         display: block
+        border-top-left-radius: 4px
+        border-top-right-radius: 4px
     .news-text-box
         background-color: white
         padding: 20px
+        border-bottom-left-radius: 4px
+        border-bottom-right-radius: 4px
         .en-savoir-plus
             display: flex
             color: black
@@ -174,13 +199,16 @@ header
 .box-progress
     width: 100%
     height: auto
-    background-image: url("/ressources/bg-progress.png")
     background-size: cover
     background-repeat: no-repeat
     padding-bottom: 100px
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-items: center
     .difficulty
         display: flex
-        padding-left: 60px
+        padding-left: 0px
         white-space: nowrap
         &-ul
             display: flex
@@ -193,11 +221,14 @@ header
         &-li
             padding: 10px
             font-size: 15px
+            border-radius: 3px
+            margin: 5px
             &:hover
                 background-color: $primaryRed
                 color: white
                 cursor: pointer
     .all-boss
+        width: 80%
         display: flex
         flex-direction: row
         padding-left: 10px
@@ -205,22 +236,57 @@ header
         flex-wrap: wrap
         justify-content: space-evenly
         padding-bottom: 100px
+        align-items: center
     .box-boss
         width: 150px
-        height: 200px
-        margin: 5px
+        height: 300px
         box-shadow: 0 25px 30px black
         color: white
-        text-shadow: 0 3px 3px black
-        &:hover
-            transform: scale(1.03)
-            cursor: pointer
-    .all-boss-mobile
-        padding-left: 40px !important
-        &-ul
-            list-style: none !important
-            padding: 5px !important
-            width: 40%  !important
+        border-radius: 3px
+        margin: 20px
+        background-repeat: no-repeat
+        flex-wrap: nowrap
+
+.text-center
+    text-align: center !important
+
+.boss-names
+    color: white
+    background-color: white
+    color: black
+    width: 80%
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    align-items: center
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5)
+    bottom: 0px
+    border-radius: 3px
+
+
+.all-boss-mobile
+    width: 100% !important
+    padding-left: 0px !important
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-items: center
+    &-ul
+        list-style: none !important
+        display: flex !important
+        justify-content: space-around !important
+        border-radius: 3px
+        margin: 4px
+
+
+
+.title-boss-box
+    width: 100%
+    height: 100%
+    display: flex
+    align-items: flex-end
+    justify-content: center
+    padding-bottom: 10px
 
 .active
     background-color: $primaryRed
@@ -261,7 +327,13 @@ header
             list-style: none
             padding-left: 0
             font-style: italic
-
+            border: 1px solid rgb(20, 20, 20)
+            border-radius: 3px
+            padding: 20px
+.whoweare
+    font-weight: 700
+    font-size: 20px
+    color: $primaryRed
 .icon-plus-title
     display: flex
     flex-direction: row
@@ -273,6 +345,8 @@ header
 
 .green
     color: green
+.cependant
+    color: $primaryRed
 
 .box-join-us
     width: 100%
@@ -303,6 +377,7 @@ header
 .btn-discord
     padding: 10px
     border: 1px solid gray
+    border-radius: 3px
     &:hover
         background-color: grey
         color: white
@@ -311,6 +386,7 @@ header
     padding: 10px
     color: white
     background-color: $primaryRed
+    border-radius: 3px
 
 .hover-scale:hover
     cursor: pointer
@@ -340,3 +416,17 @@ header
     margin: 0px !important
     display: flex
     align-items: center
+    color: rgb(125, 125, 125)
+
+.navbar-toggler
+    display: flex
+    justify-content: flex-end
+    align-items: flex-end
+    width: 100%
+    padding-right: 20px
+    font-size: 26px
+
+.t:hover
+    color: $primaryRed !important
+    cursor: pointer !important
+

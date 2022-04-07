@@ -2,7 +2,22 @@
     .all-boss-mobile {
         display: none !important;
     }
-    
+    .roster {
+        width: 80% !important;
+    }
+    .navbar-toggler {
+        display: none !important;
+    }
+    .navbar {
+        display: flex !important;
+        visibility: visible !important;
+        height: auto !important;
+        opacity: 1 !important;
+    }
+    .icon-display-none {
+        display: none !important;
+    }
+
 }
 
 @media screen and (max-width: 800px) {
@@ -10,10 +25,20 @@
         flex-direction: column !important;
         align-items: center !important;
         justify-content: center !important;
+        align-items: flex-start !important;
+        text-align: left;
+    }
+    .navbar-li {
+        padding: 15px !important;
+        margin-bottom: 10px !important;
+        background-color: rgb(25, 25, 25);
+    }
+    .margin-right {
+        margin-right: 20px !important;
     }
     .logo-box {
         display: flex !important;
-        justify-content: center !important;
+        justify-content: flex-start !important;
         align-items: center !important;
     }
     .logo{
@@ -22,7 +47,12 @@
         padding-bottom: 20px !important;
     }
     .navbar {
-        width: 90% !important;
+        width: 100% !important;
+    }
+    .navbar-ul {
+        flex-direction: column !important;
+        color: black;
+        width: 95% !important;
     }
     .navbar-socials {
         justify-content: center !important;
@@ -38,6 +68,10 @@
     .news-card {
         padding-bottom: 20px !important;
     }
+    .box-progress {
+        display: flex !important;
+        align-items: flex-start !important;
+    }
     .difficulty {
         width: 100% !important;
         padding-left: 0px !important;
@@ -46,6 +80,9 @@
         flex-direction: column !important;
         justify-content: center;
         align-items: center;
+    }
+    .all-boss-mobile-ul {
+        width: 80% !important;
     }
     .difficulty-ul {
         width: 90% !important;
@@ -80,8 +117,14 @@
     .role-ul {
         text-align: left !important;
     }
+    .twitch-box {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-top: 40px;
+    }
     .twitch-embed {
-        width: 200px !important;
+        width: 80% !important;
     }
     .mascotte-center-box {
         width: 70px !important;
@@ -113,6 +156,10 @@
     text-align: center !important;
     margin: 4px !important;
     width: 80% !important;
-    
+}
+.second-title {
+    padding-left: 0px !important;
+    margin-left: auto !important;
+    text-align: center !important;
 }
 }

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NMY</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a6c4374ef0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/bp.css">
     <link rel="stylesheet" href="css/wow-class-colors.css">
@@ -16,21 +16,23 @@
 </head>
 <body id="home">
     <header>
-        <div class="logo-box"><img class="logo" src="/ressources/mascotte.png" alt="Logo en haut à gauche du site NMY"></div>
-        <nav class="navbar">
+        <div class="logo-box"><img class="logo" src="/ressources/mascotte.png" alt="Logo en haut à gauche du site NMY">
+            <div id="btnNavbar" class="navbar-toggler"><i class="t fa-solid fa-bars"></i></div>
+        </div>
+        <nav id="mobileNavbar" class="navbar">
             <ul class="navbar-ul">
-                <li class="navbar-li"><a class="link"  href="#home" rel="noopener noreferrer">HOME</a></li>
-                <li class="navbar-li"><a class="link"  href="#progress">PROGRESS</a></li>
-                <li class="navbar-li"><a class="link"  href="#roster" rel="noopener noreferrer">ROSTER</a></li>
-                <li class="navbar-li"><a class="link"  href="#joinus">JOIN US</a></li>
+                <li class="navbar-li"><a class="link"  href="#home" rel="noopener noreferrer"><i class="icon-display-none margin-right fa-solid fa-house"></i> HOME</a></li>
+                <li class="navbar-li"><a class="link"  href="#progress"><i class="icon-display-none margin-right fa-solid fa-chart-line"></i></i>PROGRESS</a></li>
+                <li class="navbar-li"><a class="link"  href="#roster" rel="noopener noreferrer"><i class="icon-display-none margin-right fa-solid fa-people-group"></i>ROSTER</a></li>
+                <li class="navbar-li"><a class="link"  href="#joinus"><i class="icon-display-none margin-right fa-solid fa-user-plus"></i>JOIN US</a></li>
             </ul>
         </nav>
         <nav class="navbar-socials">
             <ul class="navbar-socials-ul">
-                <li class="link-socials navbar-socials-li"><a href="https://discord.gg/Hgb7WrKV" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-discord"></i></a></li>
-                <li class="navbar-socials-li"><i class="fa-brands fa-twitter"></i></li>
-                <li class="navbar-socials-li"><i class="fa-brands fa-twitch"></i></li>
-                <li class="navbar-socials-li"><i class="fa-brands fa-instagram"></i></li>
+                <li class="navbar-socials-li"><a class="link-socials" href="https://discord.gg/Hgb7WrKV" target="_blank" rel="noopener noreferrer"></a><i class="fa-brands fa-discord"></i></li>
+                <li class="navbar-socials-li"><a class="link-socials" href="https://discord.gg/Hgb7WrKV" target="_blank" rel="noopener noreferrer"></a><i class="fa-brands fa-twitter"></i></li>
+                <li class="navbar-socials-li"><a class="link-socials" href="https://discord.gg/Hgb7WrKV" target="_blank" rel="noopener noreferrer"></a><i class="fa-brands fa-twitch"></i></li>
+                <li class="navbar-socials-li"><a class="link-socials" href="https://discord.gg/Hgb7WrKV" target="_blank" rel="noopener noreferrer"></a><i class="fa-brands fa-instagram"></i></li>
             </ul>
         </nav>
     </header>
@@ -47,7 +49,7 @@
             <img class="news-image" src="/ressources/news-1.png" alt="News notre guilde recrute!">
             <div class="news-text-box">
                 <h2 class="news-title">Notre guilde recrute !</h2>
-                <span class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, delectus autem sit consequatur excepturi nemo blanditiis nulla laborum error saepe dolore id soluta tempora sunt a animi. Veritatis, illo eius.
+                <span class="lorem">Nous sommes à la recherche de joueurs voulant progresser dans une ambiance mi-chill mi-tryhard dans un roster visant le CE du patch 9.2.5. 
                 </span>
                 <div class="en-savoir-plus">
                     <span class="more-button">EN SAVOIR PLUS</span>
@@ -59,7 +61,7 @@
             <img class="news-image" src="/ressources/news-2.png" alt="Bientôt la fin du progress HM !">
             <div class="news-text-box">
                 <h2 class="news-title">Bientôt la fin du HM</h2>
-                <span class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, delectus autem sit consequatur excepturi nemo blanditiis nulla laborum error saepe dolore id soluta tempora sunt a animi. Veritatis, illo eius.
+                <span class="lorem">Actuellement en progress depuis le début du patch 9.2.5, notre guilde à atteint le 8/11 en l'espace d'un mois avec le down d'Anduin le 06/04/2022
                 </span>
                 <div class="en-savoir-plus">
                     <span class="more-button">EN SAVOIR PLUS</span>
@@ -75,12 +77,12 @@
             <div class="twitch-embed"></div>
         </div>
     </div>
-    <div id="progress" class="box-progress">
     <div class="box-title">
         <i class="primRed fa-solid fa-chart-line"></i>        
         <p class="title">PROGRESS</p>
     </div>
-    <h3 class="second-title">SEPULCHER</h3>
+    <h3 class="second-title">Sepulcher of the First Ones</h3>
+    <div id="progress" class="box-progress">
     <div class="difficulty">
         <h4 class="diff-title">DIFFICULTIES : </h4> 
         <ul class="difficulty-ul">
@@ -90,87 +92,117 @@
         </ul>
     </div>
     <div id="desktopRaidNm" class="all-boss">
-        <div class="box-boss guardian">Guardian<i class="green fa-solid fa-check"></i></div>
-        <div class="box-boss skolex">Skolex<i class="green fa-solid fa-check"></i></div>
-        <div class="box-boss xymox">Xy'mox<i class="green fa-solid fa-check"></i></div>
-        <div class="box-boss dausegne">Dausegne<i class="green fa-solid fa-check"></i></div>
-        <div class="box-boss pantheons">Pantheons<i class="green fa-solid fa-check"></i></div>
-        <div class="box-boss lihuvim">Lihuvim<i class="green fa-solid fa-check"></i></div>
-        <div class="box-boss halondrus">Halondrus<i class="green fa-solid fa-check"></i></div>
-        <div class="box-boss anduin">Anduin<i class="green fa-solid fa-check"></i></div>
-        <div class="box-boss lords">Lords<i class="green fa-solid fa-check"></i></div>
-        <div class="box-boss rygelon">Rygelon<i class="green fa-solid fa-check"></i></div>
-        <div class="box-boss jailer">Jailer<i class="green fa-solid fa-check"></i></div>
+        <div class="box-boss guardian"><div class="title-boss-box"><p class="boss-names">Guardian<i class="green fa-solid fa-check"></i></p></div></div>
+        <div class="box-boss skolex"><div class="title-boss-box"><p class="boss-names">Skolex<i class="green fa-solid fa-check"></i></p></div></div>
+        <div class="box-boss xymox"><div class="title-boss-box"><p class="boss-names">Xy'mox<i class="green fa-solid fa-check"></i></p></div></div>
+        <div class="box-boss dausegne"><div class="title-boss-box"><p class="boss-names">Dausegne<i class="green fa-solid fa-check"></i></p></div></div>
+        <div class="box-boss pantheons"><div class="title-boss-box"><p class="boss-names">Pantheons<i class="green fa-solid fa-check"></i></p></div></div>
+        <div class="box-boss lihuvim"><div class="title-boss-box"><p class="boss-names">Lihuvim<i class="green fa-solid fa-check"></i></p></div></div>
+        <div class="box-boss halondrus"><div class="title-boss-box"><p class="boss-names">Halondrus<i class="green fa-solid fa-check"></i></p></div></div>
+        <div class="box-boss anduin"><div class="title-boss-box"><p class="boss-names">Anduin<i class="green fa-solid fa-check"></i></p></div></div>
+        <div class="box-boss lords"><div class="title-boss-box"><p class="boss-names">Lords<i class="green fa-solid fa-check"></i></p></div></div>
+        <div class="box-boss rygelon"><div class="title-boss-box"><p class="boss-names">Rygelon<i class="green fa-solid fa-check"></i></p></div></div>
+        <div class="box-boss jailer"><div class="title-boss-box"><p class="boss-names">Jailer<i class="green fa-solid fa-check"></i></p></div></div>
     </div>
     <div id="desktopRaidHm" class="all-boss">
-        <div class="box-boss guardian">Guardian<i class="green fa-solid fa-check"></i></div>
-        <div class="box-boss skolex">Skolex<i class="green fa-solid fa-check"></i></div>
-        <div class="box-boss xymox">Xy'mox<i class="green fa-solid fa-check"></i></div>
-        <div class="box-boss dausegne">Dausegne<i class="green fa-solid fa-check"></i></div>
-        <div class="box-boss pantheons">Pantheons<i class="green fa-solid fa-check"></i></div>
-        <div class="box-boss lihuvim">Lihuvim<i class="green fa-solid fa-check"></i></div>
-        <div class="box-boss halondrus">Halondrus<i class="green fa-solid fa-check"></i></div>
-        <div class="box-boss bnw anduin">Anduin</div>
-        <div class="box-boss bnw lords">Lords</div>
-        <div class="box-boss bnw rygelon">Rygelon</div>
-        <div class="box-boss bnw jailer">Jailer</div>
+        <div class="box-boss guardian"><div class="title-boss-box"><p class="boss-names">Guardian<i class="green fa-solid fa-check"></i></p></div></div>
+        <div class="box-boss skolex"><div class="title-boss-box"><p class="boss-names">Skolex<i class="green fa-solid fa-check"></i></p></div></div>
+        <div class="box-boss xymox"><div class="title-boss-box"><p class="boss-names">Xy'mox<i class="green fa-solid fa-check"></i></p></div></div>
+        <div class="box-boss dausegne"><div class="title-boss-box"><p class="boss-names">Dausegne<i class="green fa-solid fa-check"></i></p></div></div>
+        <div class="box-boss pantheons"><div class="title-boss-box"><p class="boss-names">Pantheons<i class="green fa-solid fa-check"></i></p></div></div>
+        <div class="box-boss lihuvim"><div class="title-boss-box"><p class="boss-names">Lihuvim<i class="green fa-solid fa-check"></i></p></div></div>
+        <div class="box-boss halondrus"><div class="title-boss-box"><p class="boss-names">Halondrus<i class="green fa-solid fa-check"></i></p></div></div>
+        <div class="box-boss anduin"><div class="title-boss-box"><p class="boss-names">Anduin</p></div></div>
+        <div class="box-boss bnw lords"><div class="title-boss-box"><p class="boss-names">Lords</p></div></div>
+        <div class="box-boss bnw rygelon"><div class="title-boss-box"><p class="boss-names">Rygelon</p></div></div>
+        <div class="box-boss bnw jailer"><div class="title-boss-box"><p class="boss-names">Jailer</p></div></div>
     </div>
     <div id="desktopRaidMm" class="all-boss">
-        <div class="box-boss bnw guardian">Guardian</div>
-        <div class="box-boss bnw skolex">Skolex</div>
-        <div class="box-boss bnw xymox">Xy'mox</div>
-        <div class="box-boss bnw dausegne">Dausegne</div>
-        <div class="box-boss bnw pantheons">Pantheons</div>
-        <div class="box-boss bnw lihuvim">Lihuvim</div>
-        <div class="box-boss bnw halondrus">Halondrus</div>
-        <div class="box-boss bnw anduin">Anduin</div>
-        <div class="box-boss bnw lords">Lords</div>
-        <div class="box-boss bnw rygelon">Rygelon</div>
-        <div class="box-boss bnw jailer">Jailer</div>
+        <div class="box-boss bnw guardian"><div class="title-boss-box"><p class="boss-names">Guardian</p></div></div>
+        <div class="box-boss bnw skolex"><div class="title-boss-box"><p class="boss-names">Skolex</p></div></div>
+        <div class="box-boss bnw xymox"><div class="title-boss-box"><p class="boss-names">Xy'mox</p></div></div>
+        <div class="box-boss bnw dausegne"><div class="title-boss-box"><p class="boss-names">Dausegne</p></div></div>
+        <div class="box-boss bnw pantheons"><div class="title-boss-box"><p class="boss-names">Pantheons</p></div></div>
+        <div class="box-boss bnw lihuvim"><div class="title-boss-box"><p class="boss-names">Lihuvim</p></div></div>
+        <div class="box-boss bnw halondrus"><div class="title-boss-box"><p class="boss-names">Halondrus</p></div></div>
+        <div class="box-boss bnw anduin"><div class="title-boss-box"><p class="boss-names">Anduin</p></div></div>
+        <div class="box-boss bnw lords"><div class="title-boss-box"><p class="boss-names">Lords</p></div></div>
+        <div class="box-boss bnw rygelon"><div class="title-boss-box"><p class="boss-names">Rygelon</p></div></div>
+        <div class="box-boss bnw jailer"><div class="title-boss-box"><p class="boss-names">Jailer</p></div></div>
     </div>
     <div id="raidNm" class="all-boss-mobile">
-        <ul>
-            <li class="all-boss-mobile-ul">Guardian <i class="green fa-solid fa-check"></i></li>
-            <li class="all-boss-mobile-ul">Skolex <i class="green fa-solid fa-check"></i></li>
-            <li class="all-boss-mobile-ul">Xy'mox <i class="green fa-solid fa-check"></i></li>
-            <li class="all-boss-mobile-ul">Dausegne <i class="green fa-solid fa-check"></i></li>
-            <li class="all-boss-mobile-ul">Pantheons <i class="green fa-solid fa-check"></i></li>
-            <li class="all-boss-mobile-ul">Lihuvim <i class="green fa-solid fa-check"></i></li>
-            <li class="all-boss-mobile-ul">Halondrus <i class="green fa-solid fa-check"></i></li>
-            <li class="all-boss-mobile-ul">Anduin <i class="green fa-solid fa-check"></i></li>
-            <li class="all-boss-mobile-ul">Lords <i class="green fa-solid fa-check"></i></li>
-            <li class="all-boss-mobile-ul">Rygelon <i class="green fa-solid fa-check"></i></li>
-            <li class="all-boss-mobile-ul">Jailer <i class="green fa-solid fa-check"></i></li>
+        <ul class="all-boss-mobile">
+            <li class="all-boss-mobile-ul"><span style="width: 100px;">Guardian</span> <i class="green fa-solid fa-check"></i></li>
+            <div class="line"></div>
+            <li class="all-boss-mobile-ul"><span style="width: 100px;">Skolex</span> <i class="green fa-solid fa-check"></i></li>
+            <div class="line"></div>
+            <li class="all-boss-mobile-ul"><span style="width: 100px;">Xy'mox</span> <i class="green fa-solid fa-check"></i></li>
+            <div class="line"></div>
+            <li class="all-boss-mobile-ul"><span style="width: 100px;">Dausegne</span> <i class="green fa-solid fa-check"></i></li>
+            <div class="line"></div>
+            <li class="all-boss-mobile-ul"><span style="width: 100px;">Pantheons</span> <i class="green fa-solid fa-check"></i></li>
+            <div class="line"></div>
+            <li class="all-boss-mobile-ul"><span style="width: 100px;">Lihuvim</span> <i class="green fa-solid fa-check"></i></li>
+            <div class="line"></div>
+            <li class="all-boss-mobile-ul"><span style="width: 100px;">Halondrus</span> <i class="green fa-solid fa-check"></i></li>
+            <div class="line"></div>
+            <li class="all-boss-mobile-ul"><span style="width: 100px;">Anduin</span> <i class="green fa-solid fa-check"></i></li>
+            <div class="line"></div>
+            <li class="all-boss-mobile-ul"><span style="width: 100px;">Lords</span> <i class="green fa-solid fa-check"></i></li>
+            <div class="line"></div>
+            <li class="all-boss-mobile-ul"><span style="width: 100px;">Rygelon</span> <i class="green fa-solid fa-check"></i></li>
+            <div class="line"></div>
+            <li class="all-boss-mobile-ul"><span style="width: 100px;">Jailer</span> <i class="green fa-solid fa-check"></i></li>
         </ul>
     </div>
     <div id="raidHm" class="all-boss-mobile">
-        <ul>
-            <li class="all-boss-mobile-ul">Guardian <i class="green fa-solid fa-check"></i></li>
-            <li class="all-boss-mobile-ul">Skolex <i class="green fa-solid fa-check"></i></li>
-            <li class="all-boss-mobile-ul">Xy'mox <i class="green fa-solid fa-check"></i></li>
-            <li class="all-boss-mobile-ul">Dausegne <i class="green fa-solid fa-check"></i></li>
-            <li class="all-boss-mobile-ul">Pantheons <i class="green fa-solid fa-check"></i></li>
-            <li class="all-boss-mobile-ul">Lihuvim <i class="green fa-solid fa-check"></i></li>
-            <li class="all-boss-mobile-ul">Halondrus <i class="green fa-solid fa-check"></i></li>
-            <li class="all-boss-mobile-ul">Anduin <i class="green fa-solid"></i> 55%</li>
-            <li class="uncheck all-boss-mobile-ul">Lords <i class="green fa-solid"></i></li>
-            <li class="uncheck all-boss-mobile-ul">Rygelon <i class="green fa-solid"></i></li>
-            <li class="uncheck all-boss-mobile-ul">Jailer <i class="green fa-solid"></i></li>
+        <ul class="all-boss-mobile">
+            <li class="all-boss-mobile-ul"><span style="width: 100px;">Guardian</span> <i class="green fa-solid fa-check"></i></li>
+            <div class="line"></div>
+            <li class="all-boss-mobile-ul"><span style="width: 100px;">Skolex</span> <i class="green fa-solid fa-check"></i></li>
+            <div class="line"></div>
+            <li class="all-boss-mobile-ul"><span style="width: 100px;">Xy'mox</span> <i class="green fa-solid fa-check"></i></li>
+            <div class="line"></div>
+            <li class="all-boss-mobile-ul"><span style="width: 100px;">Dausegne</span> <i class="green fa-solid fa-check"></i></li>
+            <div class="line"></div>
+            <li class="all-boss-mobile-ul"><span style="width: 100px;">Pantheons</span> <i class="green fa-solid fa-check"></i></li>
+            <div class="line"></div>
+            <li class="all-boss-mobile-ul"><span style="width: 100px;">Lihuvim</span> <i class="green fa-solid fa-check"></i></li>
+            <div class="line"></div>
+            <li class="all-boss-mobile-ul"><span style="width: 100px;">Halondrus</span> <i class="green fa-solid fa-check"></i></li>
+            <div class="line"></div>
+            <li class="all-boss-mobile-ul"><span style="width: 100px;">Anduin</span> <i class="green fa-solid fa-check"></i></li>
+            <div class="line"></div>
+            <li class="uncheck all-boss-mobile-ul"><span style="width: 100px;">Jailer</span><br></li>
+            <div class="line"></div>
+            <li class="uncheck all-boss-mobile-ul"><span style="width: 100px;">Jailer</span><br></li>
+            <div class="line"></div>
+            <li class="uncheck all-boss-mobile-ul"><span style="width: 100px;">Jailer</span><br></li>
         </ul>
     </div>
     <div id="raidMm" class="all-boss-mobile">
-        <ul>
-            <li class="uncheck all-boss-mobile-ul">Guardian <i class="green fa-solid"></i></li>
-            <li class="uncheck all-boss-mobile-ul">Skolex <i class="green fa-solid"></i></li>
-            <li class="uncheck all-boss-mobile-ul">Xy'mox <i class="green fa-solid"></i></li>
-            <li class="uncheck all-boss-mobile-ul">Dausegne <i class="green fa-solid"></i></li>
-            <li class="uncheck all-boss-mobile-ul">Pantheons <i class="green fa-solid"></i></li>
-            <li class="uncheck all-boss-mobile-ul">Lihuvim <i class="green fa-solid"></i></li>
-            <li class="uncheck all-boss-mobile-ul">Halondrus <i class="green fa-solid"></i></li>
-            <li class="uncheck all-boss-mobile-ul">Anduin <i class="green fa-solid"></i></li>
-            <li class="uncheck all-boss-mobile-ul">Lords <i class="green fa-solid"></i></li>
-            <li class="uncheck all-boss-mobile-ul">Rygelon <i class="green fa-solid"></i></li>
-            <li class="uncheck all-boss-mobile-ul">Jailer <i class="green fa-solid"></i></li>
+        <ul class="all-boss-mobile">
+            <li class="uncheck all-boss-mobile-ul"><span style="width: 100px;">Guardian</span><br></li>
+            <div class="line"></div>
+            <li class="uncheck all-boss-mobile-ul"><span style="width: 100px;">Skolex</span><br></li>
+            <div class="line"></div>
+            <li class="uncheck all-boss-mobile-ul"><span style="width: 100px;">Xy'mox</span><br></li>
+            <div class="line"></div>
+            <li class="uncheck all-boss-mobile-ul"><span style="width: 100px;">Dausegne</span><br></li>
+            <div class="line"></div>
+            <li class="uncheck all-boss-mobile-ul"><span style="width: 100px;">Pantheons</span><br></li>
+            <div class="line"></div>
+            <li class="uncheck all-boss-mobile-ul"><span style="width: 100px;">Lihuvim</span><br></li>
+            <div class="line"></div>
+            <li class="uncheck all-boss-mobile-ul"><span style="width: 100px;">Halondrus</span><br></li>
+            <div class="line"></div>
+            <li class="uncheck all-boss-mobile-ul"><span style="width: 100px;">Anduin</span><br></li>
+            <div class="line"></div>
+            <li class="uncheck all-boss-mobile-ul"><span style="width: 100px;">Lords</span><br></li>
+            <div class="line"></div>
+            <li class="uncheck all-boss-mobile-ul"><span style="width: 100px;">Rygelon</span><br></li>
+            <div class="line"></div>
+            <li class="uncheck all-boss-mobile-ul"><span style="width: 100px;">Jailer</span><br></li>
         </ul>
     </div>
 </div>
@@ -178,7 +210,7 @@
     <i class="primRed fa-solid fa-people-group"></i>        
     <p class="title">ROSTER</p>
 </div>
-<h3 class="second-title">RAIDERS</h3>
+<h3 class="second-title">ENEMY RAIDERS</h3>
 <div class="box-roster">
     <div class="center-box-roster">
         <div class="role-title">
@@ -187,20 +219,19 @@
                     <i class="primRed fa-solid fa-shield-halved"></i>
                     <p class="padding tanks">TANKS</p>
                 </div>
-                <hr>
                 <ul class="role-ul">
                     <li class="padding-roster demon_hunter">Xdsmiley</li>
                     <li class="padding-roster druid">Daniel</li>
                 </ul>
             </div>
         </div>
+        
         <div class="role-title">
             <div class="roster">
                 <div class="icon-plus-title">
                     <i class="primRed fa-solid fa-hand-holding-medical"></i>
                     <p class="padding tanks">HEALS</p>
                 </div>
-                <hr>
                 <ul class="role-ul">
                     <li class="padding-roster role-li shaman">Choc</li>
                     <li class="padding-roster shaman">Ahta</li>
@@ -215,7 +246,6 @@
                     <i class="primRed fa-solid fa-hand-fist"></i>
                     <p class="padding tanks">DPS</p>
                 </div>
-                <hr>
                 <ul class="role-ul">
                     <li class="padding-roster hunter">Stayôlo</li>
                     <li class="padding-roster hunter">Nôé</li>
@@ -243,15 +273,33 @@
 <div class="box-join-us">
     <div class="box-join-us-center">
         <h3 class="nmy-recrute">NMY RECRUTE</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus eum voluptate quis quam deleniti officiis necessitatibus alias maxime harum, non voluptatum odio nobis explicabo ipsa molestiae incidunt accusantium reiciendis sequi.</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus eum voluptate quis quam deleniti officiis necessitatibus alias maxime harum, non voluptatum odio nobis explicabo ipsa molestiae incidunt accusantium reiciendis sequi.</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus eum voluptate quis quam deleniti officiis necessitatibus alias maxime harum, non voluptatum odio nobis explicabo ipsa molestiae incidunt accusantium reiciendis sequi.</p>
+        <p><span class="whoweare">Qui sommes-nous ?</span><br><br>
+
+            Enemy est une guilde fondée par deux teams M+ évoluant aux alentours de 2k6 R.io (patch 9.1, SoD) et quelques amis IRL.<br><br>
+            Navons décidé avec le temps de former un roster de raid semi-chill et semi-tryhard tout en ayant l'ambition d'atteindre le CE du patch 9.2.5.<br><br>
+            
+            Nous recherchons des joueurs matures, bienveillants, investis, expérimentés et surtout motivés en vue de raider dans de bonnes conditions afin de terminer le progress HM et d'entamer le MM. <br><br>
+            
+            Nous raidons obligatoirement 3 fois par semaine le lundi, mercredi et le dimanche de 20h30 à 23h30. <br><br>
+            
+            <span class="cependant">Cependant, nous avons quelques pré-requis :</span><br><br>
+            
+            - Avoir atteint le pallier 11/11 NM du Sépulcre des Fondateurs<br>
+            - Une côte minimum de 2000 points R.io en mythique +<br>
+            - Avoir plus de 18 ans<br>
+            - Minimum 2 pièces de tier-set.<br><br>
+            
+            Si vous pensez avoir le profil correspondant à nos attentes, nous vous invitons à nous rejoindre sur notre <span style="font-weight: 700; color: rgb(150, 150, 150);">Discord</span> et d'mp un officier avec votre profil R.io. <br>
+            Vous pouvez aussi postuler sur notre formulaire <span style="color: #ed3838;"> Google Form</span>.</p>
         <div class="buttons">
             <span class="cursor btn-google-form"><a class="link" href="https://docs.google.com/forms/d/e/1FAIpQLSe815Os7R8izvVKVpVBNhIl7sCOnAUfej_atrRG-cHTHyZMJQ/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">Google Form</a></span>
             <span class="btn-discord"><a class="link" href="https://discord.gg/Hgb7WrKV" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-discord"></i> DISCORD</a></span>
         </div>
     </div>
 </div>
+<footer>
+
+</footer>
 <script src="index.js"></script>
 </body>
 </html>
