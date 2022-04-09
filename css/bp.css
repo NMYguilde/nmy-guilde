@@ -17,7 +17,16 @@
     .icon-display-none {
         display: none !important;
     }
-
+    .navbar-socials-mobile {
+        display: none;
+    }
+    .navbar-socials-desktop {
+        width: 100% !important;
+        justify-content: flex-end !important;
+        display: flex !important;
+        padding-right: 20px;
+    }
+    
 }
 
 @media screen and (max-width: 800px) {
@@ -48,16 +57,25 @@
     }
     .navbar {
         width: 100% !important;
+        flex-direction: column !important;
     }
     .navbar-ul {
         flex-direction: column !important;
         color: black;
         width: 95% !important;
+        margin: 0px !important;
     }
-    .navbar-socials {
+    .navbar-socials-ul {
+        margin: 0px !important;
+    }
+    .navbar-socials-desktop {
         justify-content: center !important;
         padding-top: 0px !important;
         padding-right: 0px !important;
+        display: none;
+    }
+    .navbar-socials-mobile {
+        display: flex;
     }
     .center-box {
         height: calc(15rem - 3rem) !important;
