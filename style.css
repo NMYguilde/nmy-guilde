@@ -20,6 +20,7 @@ html, body {
   background-color: #141414;
   margin-top: 4px;
   margin-bottom: 4px;
+  list-style: none;
 }
 
 a {
