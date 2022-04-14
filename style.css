@@ -44,6 +44,16 @@ a:hover {
   cursor: pointer !important;
 }
 
+.en-savoir-plus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  color: #ed3838;
+}
+
 .flex-start {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -195,8 +205,6 @@ header {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  padding-bottom: 5px;
-  padding-top: 5px;
   padding-right: 20px;
 }
 
@@ -216,17 +224,22 @@ header {
 
 .navbar-socials-li {
   color: #7d7d7d;
-  border: 1px solid #7d7d7d;
+  border-radius: 3px;
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 10px;
   padding-right: 10px;
-  margin: 10px;
+  margin: 10px0;
+  font-family: marine, sans-serif;
 }
 
 .navbar-socials-li:hover {
   color: white;
   cursor: pointer;
+}
+
+.mr {
+  margin-right: 10px;
 }
 
 .center-box {
@@ -276,10 +289,73 @@ header {
   padding-left: 20px;
 }
 
-.news-box {
-  color: black;
+.btn-discord {
+  background-color: #5865F2;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 14px;
+}
+
+.btn-discord:hover {
+  color: white !important;
+}
+
+.news-emplacement {
   width: 100%;
-  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.twitch-emplacement {
+  height: 100%;
+}
+
+.news-cards {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border-radius: 10px;
+  width: 315px;
+  margin: 30px;
+}
+
+.news-cards:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.news-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+  margin: 0px;
+  color: black;
+}
+
+.news {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -288,61 +364,21 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding-bottom: 150px;
+  height: auto;
 }
 
-.news-box .news-card {
-  width: 315px;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+.news-1 {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 10px;
+  max-height: 315px;
+  border-top-right-radius: 10px;
 }
 
-.news-box .news-card:hover {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-  cursor: pointer;
-}
-
-.news-box .news-image {
-  display: block;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-}
-
-.news-box .news-text-box {
-  background-color: white;
-  padding: 20px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-}
-
-.news-box .news-text-box .en-savoir-plus {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.lorem {
   color: black;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-top: 20px;
-  color: #ed3838;
-}
-
-.news-box .news-text-box .en-savoir-plus:hover {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
-}
-
-.news-box .lorem {
-  color: black;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .padding {
@@ -351,6 +387,10 @@ header {
 
 .cursor {
   cursor: pointer;
+}
+
+.btn-twitch {
+  background-color: #6441a5;
 }
 
 .twitch-box {
@@ -432,7 +472,10 @@ header {
 }
 
 .box-progress .difficulty-li {
-  padding: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 20px;
+  padding-left: 20px;
   font-size: 15px;
   border-radius: 3px;
   margin: 5px;
@@ -464,6 +507,8 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .box-progress .box-boss {
@@ -485,9 +530,9 @@ header {
 
 .boss-names {
   color: white;
-  background-color: white;
-  color: black;
-  width: 80%;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 100%;
+  padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -500,15 +545,14 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
-  bottom: 0px;
-  border-radius: 3px;
+  -webkit-box-shadow: 0 5px 25px black;
+          box-shadow: 0 5px 25px black;
+  text-shadow: 0 3px 5px black;
 }
 
 .all-boss-mobile {
   width: 100% !important;
-  padding-left: 0px !important;
+  padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -559,7 +603,17 @@ header {
 .second-title {
   font-size: 25px;
   font-weight: 400;
-  padding-left: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  font-style: italic;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding-left: 0px;
 }
 
 .box-roster {
@@ -574,9 +628,6 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url("/ressources/bg-roster.png");
-  background-repeat: no-repeat;
-  background-size: cover;
   padding-bottom: 100px;
 }
 
@@ -590,7 +641,6 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: rgba(0, 0, 0, 0.4);
-  border: 1px solid #1e1e1e;
   -webkit-box-shadow: 0 20px 40px black;
           box-shadow: 0 20px 40px black;
   padding-top: 40px;
@@ -614,8 +664,7 @@ header {
   list-style: none;
   padding-left: 0;
   font-style: italic;
-  border: 1px solid #141414;
-  border-radius: 3px;
+  border: 2px solid #282828;
   padding: 20px;
 }
 
@@ -639,6 +688,10 @@ header {
   font-size: 30px;
 }
 
+hr {
+  opacity: 0.3;
+}
+
 .padding-roster {
   padding: 5px;
 }
@@ -649,6 +702,15 @@ header {
 
 .cependant {
   color: #ed3838;
+}
+
+.absolute-prog {
+  position: absolute;
+  top: 20px;
+  font-size: 40px;
+  font-family: marine, sans-serif;
+  font-weight: 700;
+  text-shadow: 0px 5px 5px black;
 }
 
 .box-join-us {
@@ -667,7 +729,7 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-bottom: 150px;
+  padding-bottom: 80px;
 }
 
 .box-join-us-center {
@@ -701,18 +763,6 @@ header {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding-top: 80px;
-}
-
-.btn-discord {
-  padding: 10px;
-  border: 1px solid gray;
-  border-radius: 3px;
-}
-
-.btn-discord:hover {
-  background-color: grey;
-  color: white;
-  cursor: pointer;
 }
 
 .btn-google-form {
@@ -768,7 +818,8 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #7d7d7d;
+  color: #969696;
+  font-weight: 300;
 }
 
 .navbar-toggler {
