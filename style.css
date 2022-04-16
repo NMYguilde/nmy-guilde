@@ -238,6 +238,17 @@ header {
   cursor: pointer;
 }
 
+.absolute-check {
+  position: absolute;
+  color: #00ff64;
+  font-size: 70px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  top: 40%;
+  text-shadow: 0 2px 5px black;
+}
+
 .mr {
   margin-right: 10px;
 }
@@ -522,6 +533,7 @@ header {
   background-repeat: no-repeat;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  position: relative;
 }
 
 .text-center {
@@ -657,13 +669,13 @@ header {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 100%;
+  border-right: 1px solid rgba(200, 0, 0, 0.5);
 }
 
 .center-box-roster .role-title .role-ul {
   list-style: none;
   padding-left: 0;
   font-style: italic;
-  border: 2px solid #282828;
   padding: 20px;
 }
 
