@@ -17,6 +17,53 @@ let jailer = document.getElementById("jailer")
 let killed = document.getElementById("killed")
 let progression = document.getElementById("progression")
 let mmProgression = document.getElementById("mmProgression")
+let container = document.getElementById("container")
+let progressBtn = document.getElementById("progressBtn")
+let homeBtn = document.getElementById("homeBtn")
+let discordBtn = document.getElementById("discordBtn")
+let contactBtn = document.getElementById("contactBtn")
+let news = document.getElementById("news")
+let underConstruct = document.getElementById("pageConstruct")
+let enterBtn = document.getElementById("enterBtn")
+
+enterBtn.onclick = function() {
+    underConstruct.style.visibility = "hidden"
+    underConstruct.style.opacity = "0"
+    underConstruct.style.transition ="0.4s"
+}
+progressBtn.onclick = function() {
+    container.style.visibility ="visible"
+    container.style.opacity = "1"
+    progressBtn.classList.add("active")
+    homeBtn.classList.remove("active")
+    discordBtn.classList.remove("active")
+    contactBtn.classList.remove("active")
+    news.style.visibility = "hidden"
+    news.style.opacity = "0"
+}
+
+homeBtn.onclick = function () {
+    progressBtn.classList.remove("active")
+    homeBtn.classList.add("active")
+    discordBtn.classList.remove("active")
+    contactBtn.classList.remove("active")
+    container.style.visibility ="hidden"
+    container.style.opacity ="0"
+    news.style.visibility = "visible"
+    news.style.opacity = "1"
+}
+
+contactBtn.onclick = function() {
+    contactBtn.classList.add("active")
+    progressBtn.classList.remove("active")
+    homeBtn.classList.remove("active")
+    discordBtn.classList.remove("active")
+    container.style.visibility = "hidden"
+    container.style.opacity = "0"
+    news.style.visibility ="hidden"
+    news.style.opacity ="0"
+
+}
 
 nmBtn.onclick = function() {
     progressLine.style.width ="97.7%"
@@ -35,6 +82,8 @@ nmBtn.onclick = function() {
     hmBtn.style.color = "dimgray"
     mmBtn.style.color = "dimgray"
     progression.style.display ="none"
+    cleared.style.display = "block"
+
 }
 
 hmBtn.onclick = function () {
@@ -56,6 +105,7 @@ hmBtn.onclick = function () {
     lords.style.color = "dimgray"
     rygelon.style.color = "dimgray"
     jailer.style.color = "white"
+    cleared.style.display = "none"
 
 }
 
@@ -76,6 +126,7 @@ mmBtn.onclick = function() {
     lords.style.color = "dimgray"
     rygelon.style.color = "dimgray"
     jailer.style.color = "dimgray"
-    mmProgression.style.display ="bloc"
+    mmProgression.style.display ="block"
     progression.style.display ="none"
+    cleared.style.display = "none"
 }
