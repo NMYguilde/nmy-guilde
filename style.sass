@@ -1,543 +1,281 @@
-$primaryRed: #ed3838
-.primRed
-    color: $primaryRed    
-
 html, body
+    width: 100%
+    height: 100%
     margin: 0px
     padding: 0px
-    width: 100%
-    height: 100%
-    font-family: marine, sans-serif
-    font-style: normal
     background-color: black
-    color: white
-    scroll-behavior: smooth
-
-.line
-    height: 1px
-    width: 80%
-    background-color: rgb(20, 20, 20)
-    margin-top: 4px
-    margin-bottom: 4px
-    list-style: none
-
-a
-    color: white !important
-
-a:active
-    color: white !important
-
-a:hover
-    color: $primaryRed !important
-
-.navbar-li:hover
-    color: $primaryRed !important
-
-.text-underline:hover
-    text-decoration: underline !important
-    cursor: pointer !important
-
-
-.en-savoir-plus
-    display: flex
-    justify-content: flex-end
-    color: $primaryRed
-.flex-start
-    display: flex
-    align-items: flex-start
-    justify-content: flex-start
-    
-.vertical-line
-    width: 1px
-    height: 100%
-    background-color: rgba(40, 40, 40, 1)
-    margin: 40px
-    padding-top: 20px
-    padding-bottom: 20px
-.link-socials
-    color: #7D7D7D !important
-
-.link-socials:hover
-    color: white !important
-
-.link-socials:visited
-    text-decoration: none !important
-    color: #7D7D7D !important
-
-a
-    text-decoration: none !important
-    
-.color-white
-    color: white !important
- 
-.no-hover:hover
-    color: unset !important
-
-.open
-    visibility: visible !important
-    opacity: 1 !important
-    height: auto !important
-
-.margin-right
-    margin-right: 20px !important
-
-header
-    width: 100%
-    height: auto
-    display: flex
-    flex-direction: row
-    justify-content: space-between
-    align-items: center
-    border-bottom: 1px solid rgb(75, 75, 75)
-.logo-box
-    width: 100%
-    .logo    
-        padding-left: 20px !important
-    
-.flex-dir-column
-    display: flex
-    flex-direction: column
-.navbar
-    color: white
-    display: flex
-    justify-content: center
-    width: 100%
+    color: rgba(220, 220, 220, 1)
+    font-family: ocr-b-std, monospace
     font-weight: 400
-    white-space: nowrap
-    visibility: hidden
-    transition: height 0.4s, visibility 0s, opacity 0.4s
-    opacity: 0
-    height: 0px
-    align-items: center
-    &-ul
-        width: 100%
-        list-style: none
-        display: flex
-        flex-direction: row
-        justify-content: space-between
-        padding-left: 0px
-    &-li
-        padding: 10px
-        align-items: center !important
-        &:hover
-            cursor: pointer
-            color: $primaryRed !important
-.navbar-socials
-    color: white
-    justify-content: flex-end
-    display: flex
-    width: 100%
-    padding-right: 20px
-    &-ul
-        display: flex
-        flex-direction: row
-        list-style: none
-        justify-content: space-around
-        padding-left: 0px
-    &-li
-        color: rgb(125, 125, 125)
-        border-radius: 3px
-        padding-top: 5px
-        padding-bottom: 5px
-        padding-left: 10px
-        padding-right: 10px
-        margin: 10px0
-        font-family: marine, sans-serif
-        &:hover
-            color: white
-            cursor: pointer
+    font-style: normal
+    
+.roster-roles
+    padding: 0px
 
-.absolute-check
+.under-construct
     position: absolute
-    color: rgb(0, 255, 100)
-    font-size: 70px
+    z-index: 999 !important
+    width: 100%
+    height: 100%
+    background-color: black
+    display: block
+    transition: 0.4s
+    &-txt
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%)
+        font-size: 14px
+        color: darkgray
+        animation: fadeOut 3s infinite
+.enter
+    position: absolute
+    top: 75%
     left: 50%
     transform: translate(-50%)
-    top: 40%
-    text-shadow: 0 2px 5px black
-
-.mr
-    margin-right: 10px
-.center-box
-    width: 100%
-    background-color: gray
-    display: flex
-    justify-content: center
-    align-items: center
-    background-image: url("/ressources/center-box-bg.png")
-    height: 350px
-    background-position: top
-    background-size: cover
-    background-repeat: none
-    color: white
-    border-bottom: 1px solid rgb(75, 75, 75)
-    .enemy
-        font-size: 80px
-        font-family: marine, sans-serif
-        font-weight: 900
-        font-style: italic
-
-.box-title
-    font-size: 30px
+    color: rgb(200, 200, 200)
+    font-size: 14px
+    cursor: pointer
+header
+    padding: 100px
     display: flex
     flex-direction: row
     align-items: center
-    padding: 40px
-    .title
-        padding-left: 20px
-
-.btn-discord
-    background-color: #5865F2
-    padding-left: 10px
-    padding-right: 10px
-    padding-top: 5px
-    padding-bottom: 5px
-    font-size: 14px
-    &:hover
-        color: white !important
-.news-emplacement
+.emplacement-logo
     width: 100%
-    display: flex
-    flex-direction: column
-.twitch-emplacement
-    height: 100%
-
-.news-cards
-    flex-direction: column  
-    display: flex
-    background-color: white
-    justify-content: flex-start
-    border-radius: 10px
-    width: 315px
-    margin: 30px
-    &:hover
-        transform: scale(1.02)
-        transition: 0.2s
-        cursor: pointer
-
-.news-text
-    display: flex
-    flex-direction: column
-    padding: 20px
-    margin: 0px
-    color: black
-
-
-.news
-    display: flex
-    justify-content: space-around
-    align-items: center
-    height: auto   
-.news-1
-    object-fit: cover
-    border-top-left-radius: 10px
-    max-height: 315px
-    border-top-right-radius: 10px
-.lorem
-    color: black
-    text-overflow: ellipsis
-    overflow: hidden
-
-.padding
-    padding-left: 10px
-.cursor
-    cursor: pointer
-
-.btn-twitch
-    background-color: #6441a5
-
-
-.twitch-box
-    color: white
-    display: flex
-    flex-direction: column
-    .twitch-title
-        flex-direction: row
-        display: flex
-        align-items: center
-    .twitch-embed
-        height: 300px
-        width: 400px
-        background-color: rgb(25, 25, 25)
-
-.box-progress
-    width: 100%
-    height: auto
+.logo
+    background-image: url("logo3.png")
     background-size: cover
     background-repeat: no-repeat
-    padding-bottom: 100px
-    display: flex
-    justify-content: center
-    flex-direction: column
-    align-items: center
-    .difficulty
-        display: flex
-        padding-left: 0px
-        white-space: nowrap
-        &-ul
-            display: flex
-            flex-direction: row
-            list-style: none
-            justify-content: space-between
-            width: 40%
-            font-size: 20px
-            align-items: center
-        &-li
-            padding-top: 5px
-            padding-bottom: 5px
-            padding-right: 20px
-            padding-left: 20px
-            font-size: 15px
-            border-radius: 3px
-            margin: 5px
-            &:hover
-                background-color: $primaryRed
-                color: white
-                cursor: pointer
-    .all-boss
-        width: 80%
-        display: flex
-        flex-direction: row
-        padding-left: 10px
-        padding-top: 20px
-        flex-wrap: wrap
-        justify-content: space-evenly
-        padding-bottom: 100px
-        align-items: center
-        transition: 0.4s
-    .box-boss
-        width: 150px
-        height: 300px
-        box-shadow: 0 25px 30px black
-        color: white
-        border-radius: 3px
-        margin: 20px
-        background-repeat: no-repeat
-        flex-wrap: nowrap
-        position: relative
-
-.text-center
-    text-align: center !important
-
-.boss-names
-    color: white
-    background-color: rgba(255, 255, 255, 0.3)
+    width: 100px
+    height: 21px
+nav
     width: 100%
-    padding: 10px
-    display: flex
-    flex-direction: row
-    justify-content: space-around
-    align-items: center
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 1)
-    text-shadow: 0 3px 5px black
-
-
-.all-boss-mobile
-    width: 90% !important
-    display: flex
-    justify-content: center
-    flex-direction: column
-    align-items: center
-    &-ul
-        list-style: none !important
-        display: flex !important
-        justify-content: space-around !important
-        border-radius: 3px
-        margin: 4px
-
-
-
-.title-boss-box
-    width: 100%
-    height: 100%
-    display: flex
-    align-items: flex-end
-    justify-content: center
-    padding-bottom: 10px
-
-.active
-    background-color: $primaryRed
-    color: white
-    cursor: pointer
-
-.second-title
-    font-size: 25px
-    font-weight: 400
-    display: flex
-    justify-content: center
-    width: 100%
-    font-style: italic
-    text-transform: uppercase
-    font-size: 20px
-    padding-left: 0px
-    
-
-.box-roster
-    width: 100%
-    height: auto
-    display: flex
-    justify-content: center
-    align-items: center
-    padding-bottom: 100px
-.center-box-roster
-    display: flex
-    width: 80%
-    height: 60%
-    justify-content: center
-    background-color: rgba(0, 0, 0, 0.4)
-    box-shadow: 0 20px 40px black
-    padding-top: 40px
-    padding-bottom: 40px
-    .role-title
-        display: flex
-        flex-direction: row
-        justify-content: space-around
-        width: 100%
-        border-right: 1px solid rgba(200, 0, 0, 0.5)
-        .role-ul
-            list-style: none
-            padding-left: 0
-            font-style: italic
-            padding: 20px
-.whoweare
-    font-weight: 700
-    font-size: 20px
-    color: $primaryRed
-.icon-plus-title
-    display: flex
-    flex-direction: row
-    align-items: center
-    font-size: 30px
-
-hr
-    opacity: 0.3
-
-.padding-roster 
-    padding: 5px
-
-.green
-    color: green
-.cependant
-    color: $primaryRed
-
-.absolute-prog
-    position: absolute
-    top: 20px
-    font-size: 40px
-    font-family: marine, sans-serif 
-    font-weight: 700
-    text-shadow: 0px 5px 5px black
-
-.box-join-us
-    width: 100%
-    height: auto
-    display: flex
-    justify-content: center
-    align-items: center
-    flex-direction: column
-    padding-bottom: 80px
-    &-center
-        width: 80%
-        height: auto
-        display: flex
-        justify-content: flex-start
-        flex-direction: column
-        align-items: center
-    
-.nmy-recrute
-    font-style: italic
-    font-size: 35px
-
-.buttons 
-    width: 50%
-    display: flex
-    justify-content: space-around
-    padding-top: 80px
-
-.btn-google-form
-    padding: 10px
-    color: white
-    background-color: $primaryRed
-    border-radius: 3px
-
-.hover-scale:hover
-    cursor: pointer
-    transform: scale(1.03)
-
-#raidNm
-    display: none
-
-#raidMm
-    display: none
-
-#desktopRaidNm
-    display: none
-#desktopRaidHm
-    display: flex
-#desktopRaidMm
-    display: none
-
-.uncheck
-    color: rgb(90, 90, 90)
-
-.bnw 
-    filter: saturate(0)
-    opacity: 0.5
-
-.diff-title
-    margin: 0px !important
-    display: flex
-    align-items: center
-    color: rgba(150, 150, 150, 1)
-    font-weight: 300
-
-.navbar-toggler
     display: flex
     justify-content: flex-end
-    align-items: flex-end
-    width: 100%
-    padding-right: 20px
-    font-size: 26px
-
-.t:hover
-    color: $primaryRed !important
-    cursor: pointer !important
-
-
-footer
-    width: 90%
-    height: auto
+    font-size: 13px
+ul
+    list-style-type: none
     display: flex
-    justify-content: center
+    flex-direction: row
+    width: 100%
+    justify-content: flex-end
+
+li
+    padding-left: 25px
+    padding-right: 25px
+    transition: 0.2s
+    color: #787878
+
+.nmy-recrute
+    padding: 20px
+    font-size: 46px
+    text-align: center
+    margin-bottom: 40px
+
+.mid-box
+    width: 50%
     margin-left: auto
     margin-right: auto
-
-.footer-box
-    width: 90%
-    border-top: 1px solid gray
-    padding-left: 40px
-    flex-direction: row
     display: flex
-    justify-content: space-around
-    padding-right: 40px
-
-.footer-contact
-    padding-top: 40px
+    flex-direction: column
+    font-size: 14px
+.progress-box
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 100%
     width: 100%
+    flex-direction: column
 
+.container
+    position: absolute
+    width: auto
+    bottom: 15%
+    left: 50%
+    transform: translate(-50%)
+    visibility: hidden
+    opacity: 0
+    transition: 0.3s
+.modes-box
+    width: 100%
+    display: flex
+    justify-content: flex-start
+    align-items: center
 
-.footer-contact-ul
-    list-style-type: none
+.modes
+    padding-left: 25px
+    padding-right: 25px
+    color: rgba(120, 120, 120, 1)
+    font-size: 14px
+    transition: 0.2s
+
+.progress-line
+    height: 15px
+    width: 97.7%
+    margin-top: 11px
+    margin-bottom: 11px
+    display: flex
+    justify-content: flex-start
+    align-items: flex-start
+    border-top: 1px solid rgba(220, 220, 220, 1)
+    border-right: 1px solid rgba(220, 220, 220, 1)
+    background-color: black
+.active
+    color: rgba(220, 220, 220, 1)
+
+.absolute-line
+    width: 1px
+    height: 16px
+    background-color: rgba(220, 220, 220, 1)
+    position: absolute
+    right: 26px
+    top: 26px
+
+.pull
+    display: flex
+    justify-content: flex-end
+    text-align: center
+
+.bosses-ul
+    font-size: 12px
     padding-left: 0px
 
-.contact-text
-    color: darkgray
-    font-size: 15px
-    font-weight: 400
+.pl-0
+    padding-left: 0px
 
-.blizzard
-    color: rgb(100, 180, 180)
+.pr-0
+    padding-right: 0px
 
-.gm
+.hover-effect:hover
+    color: white
+    transition: 0.2s
+    cursor: pointer
+
+.bosses-li
+    text-align: center
+
+.bosses-li
+    text-align: center
+    display: flex
+    flex-direction: column
+
+
+#killed
+    font-size: 10px
+    color: white
+    display: none
+    padding-top: 4px
+    position: absolute
+    top: 70px
+
+#progression, 
+    position: absolute
+    top: 70px
+
+#mmProgression
+    position: absolute
+    top: 70px
+    display: none
+
+.actual-progress
+    font-size: 10px
+    margin-left: 20px
+    text-align: center
+
+@keyframes fadeOut
+    0%
+        opacity: 1
+    25%
+        opacity: 0
+    50%
+        opacity: 1
+    100%
+        opacity: 1
+.no-flex-end
+    display: flex
+    justify-content: normal
+
+.roster-ul
+    display: flex
+    flex-direction: column
+    color: white
+    font-size: 14px
+    padding: 0px
+
+.roster-li
+    padding: 5px
+    padding-left: 0px
+.roster-box
+    flex-direction: row
+    display: flex
+
+
+.news-box
+    display: flex
+    justify-content: center
+    width: 50%
+    height: 40%
+    padding: 100px
+    flex-direction: column
+.title
+    font-size: 13px
+    color: dimgray
+    margin: 20px
+
+.title-box
+    padding-left: 0px
+    padding-right: 0px
+    padding-bottom: 40px
+    padding-top: 20px
+
+.flex-direction-row
+    display: flex
+    flex-direction: row
+
+
+.text-box
+    display: flex
+    flex-direction: column
+    text-transform: uppercase
+    padding: 40px
+    border-left: 1px dotted rgba(35, 35, 35, 1)
+    margin: 20px
+    width: 100%
+    white-space: break-spaces
+    
+.no-padding
+    padding-left: 0px
+
+
+.btn-discord
+    width: 150px
+    text-align: center
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-top: 40px
+    background-color: dimgray
+    &:hover
+        background-color: gray
+        cursor: pointer
+
+.no-border
+    border: none
+
+.paragraphe
+    text-transform: none
     font-size: 12px
-    color: darkgray
+
+#news
+    transition: 0.3s
+
+.cleared
+    color: white
+    position: absolute
+    left: 50%
+    transform: translate(-50%)
+    font-size: 13px
+    margin-top: 20px
+    visibility: hidden
+    opacity: 0

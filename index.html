@@ -4,295 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NMY</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/a6c4374ef0.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/bp.css">
-    <link rel="stylesheet" href="css/wow-class-colors.css">
-    <link rel="stylesheet" href="css/boss.css">
-    <link rel="shortcut icon" href="/ressources/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://use.typekit.net/dsv1bus.css">
-    <meta name="description" content="World of Warcraft guild Enemy - Archimonde. Guilde semi-tryhard semi-chill évoluant sur le serveur francophone Archimonde.">
+    <link rel="stylesheet" href="bp.css">
+    <link rel="stylesheet" href="wow-class.css">
+    <title>NMY Archimonde</title>
 </head>
-<body id="home">
+<div id="pageConstruct" class="under-construct">
+    <span class="under-construct-txt">GUILD DISBANDED</span>
+</div>
+<body>
     <header>
-        <div class="cursor logo-box"><img class="logo" src="/ressources/mascotte.png" alt="Logo en haut à gauche du site NMY">
-            <div id="btnNavbar" class="navbar-toggler"><i class="t fa-solid fa-bars"></i></div>
+        <div class="emplacement-logo">
+            <div style="font-size: 26px;">ENEMY</div>
         </div>
-        <nav id="mobileNavbar" class="navbar">
-            <ul class="navbar-ul">
-                <li class="navbar-li"><a class="initial"  href="#home" rel="noopener noreferrer"><i class="icon-display-none margin-right fa-solid fa-house"></i> HOME</a></li>
-                <li class="navbar-li"><a class="initial"  href="#progress"><i class="icon-display-none margin-right fa-solid fa-chart-line"></i>PROGRESS</a></li>
-                <li class="navbar-li"><a class="initial"  href="#roster" rel="noopener noreferrer"><i class="icon-display-none margin-right fa-solid fa-people-group"></i>ROSTER</a></li>
-                <li class="navbar-li"><a class="initial"  href="#joinus"><i class="icon-display-none margin-right fa-solid fa-user-plus"></i>JOIN US</a></li>
-            </ul>
-            <nav class="navbar-socials-mobile">
-                <ul class="navbar-socials-ul">
-                    <li style="margin: 15px;" class="navbar-socials-li"><a class="btn-discord " href="https://discord.gg/9DJPQS9q5F" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-discord"></i>&nbsp;DISCORD</a></li>
-                </ul>
-            </nav>
-        </nav>
-        <nav class="navbar-socials-desktop">
-            <ul class="navbar-socials-ul">
-                <li style="margin-right: 10px;" class="navbar-socials-li"><a class="btn-discord " href="https://discord.gg/9DJPQS9q5F" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-discord"></i>&nbsp;DISCORD</a></li>
+        <nav>
+            <ul>
+                <li id="discordBtn" class="li-nav hover-effect">DISCORD</li>
+                <li id="progressBtn" class="li-nav hover-effect">PROGRESS</li>
             </ul>
         </nav>
     </header>
-    <div class="center-box">
-        <img class="mascotte-center-box" src="/ressources/mascotte-center-box.png" alt="Mascotte de la guilde">
-        <span class="enemy">ENEMY</span>
-    </div>
-    <div class="box-title">
-        <i class="primRed fa-solid fa-newspaper"></i>
-        <p class="title">LATEST NEWS</p>
-    </div>
-    <div class="news">
-        <div class="news-cards">
-            <img class="news-1" src="/ressources/news-1.png" alt="First news of the Website">
-            <div class="news-text">
-                <h3>Notre guilde recrute !</h1>
-                    <p>Nous sommes à la recherche de joueurs voulant progresser dans une ambiance mi-chill mi-tryhard dans un roster visant le CE du patch 9.2.5.</p>
-                    <div class="en-savoir-plus">
-                        <span class="more-button">EN SAVOIR PLUS</span>
-                        <i class="padding fa-solid fa-arrow-right"></i>
-                    </div>
-            </div>
-        </div> 
-        <div class="news-cards">
-            <img class="news-1" src="/ressources/news-2.png" alt="Second news of the Website">
-            <div class="news-text">
-                <h3>Bientôt la fin du HM</h1>
-                    <p>Actuellement en progress depuis le début du patch, notre roster à atteint Jailer HM en l'espace d'un mois.</p>
-                    <div class="en-savoir-plus">
-                        <span class="more-button">EN SAVOIR PLUS</span>
-                        <i class="padding fa-solid fa-arrow-right"></i>
-                    </div>
-            </div>
-        </div>
-    </div>
-    </div>
-    <div class="box-title">
-        <i class="primRed fa-solid fa-chart-line"></i>        
-        <p class="title">PROGRESS</p>
-    </div>
-    <h3 class="second-title">Sepulcher of the First Ones</h3>
-    <div id="progress" class="box-progress">
-    <div class="difficulty">
-        <ul class="difficulty-ul">
-            <li id="btnNormal" class="difficulty-li">NORMAL</li>  
-            <li id="btnHeroic" class="difficulty-li active">HEROIC</li>  
-            <li id="btnMythic" style="color: darkgray" class="difficulty-li">MYTHIC</li>  
-        </ul>
-    </div>
-    <div id="desktopRaidNm" class="all-boss">
-        <div class="box-boss guardian"><i class="absolute-check fa-solid fa-check"></i><div class="title-boss-box"><p class="boss-names">Guardian</p></div></div>
-        <div class="box-boss skolex"><i class="absolute-check fa-solid fa-check"></i><div class="title-boss-box"><p class="boss-names">Skolex</p></div></div>
-        <div class="box-boss xymox"><i class="absolute-check fa-solid fa-check"></i><div class="title-boss-box"><p class="boss-names">Xy'mox</p></div></div>
-        <div class="box-boss dausegne"><i class="absolute-check fa-solid fa-check"></i><div class="title-boss-box"><p class="boss-names">Dausegne</p></div></div>
-        <div class="box-boss pantheons"><i class="absolute-check fa-solid fa-check"></i><div class="title-boss-box"><p class="boss-names">Pantheons</p></div></div>
-        <div class="box-boss lihuvim"><i class="absolute-check fa-solid fa-check"></i><div class="title-boss-box"><p class="boss-names">Lihuvim</p></div></div>
-        <div class="box-boss halondrus"><i class="absolute-check fa-solid fa-check"></i><div class="title-boss-box"><p class="boss-names">Halondrus</p></div></div>
-        <div class="box-boss anduin"><i class="absolute-check fa-solid fa-check"></i><div class="title-boss-box"><p class="boss-names">Anduin</p></div></div>
-        <div class="box-boss lords"><i class="absolute-check fa-solid fa-check"></i><div class="title-boss-box"><p class="boss-names">Lords</p></div></div>
-        <div class="box-boss rygelon"><i class="absolute-check fa-solid fa-check"></i><div class="title-boss-box"><p class="boss-names">Rygelon</p></div></div>
-        <div class="box-boss jailer"><i class="absolute-check fa-solid fa-check"></i><div class="title-boss-box"><p class="boss-names">Jailer</p></div></div>
-    </div>
-    <div id="desktopRaidHm" class="all-boss">
-        <div class="box-boss guardian"><i class="absolute-check fa-solid fa-check"></i><div class="title-boss-box"><p class="boss-names">Guardian</p></div></div>
-        <div class="box-boss skolex"><i class="absolute-check fa-solid fa-check"></i><div class="title-boss-box"><p class="boss-names">Skolex</p></div></div>
-        <div class="box-boss xymox"><i class="absolute-check fa-solid fa-check"></i><div class="title-boss-box"><p class="boss-names">Xy'mox</p></div></div>
-        <div class="box-boss dausegne"><i class="absolute-check fa-solid fa-check"></i><div class="title-boss-box"><p class="boss-names">Dausegne</p></div></div>
-        <div class="box-boss pantheons"><i class="absolute-check fa-solid fa-check"></i><div class="title-boss-box"><p class="boss-names">Pantheons</p></div></div>
-        <div class="box-boss lihuvim"><i class="absolute-check fa-solid fa-check"></i><div class="title-boss-box"><p class="boss-names">Lihuvim</p></div></div>
-        <div class="box-boss halondrus"><i class="absolute-check fa-solid fa-check"></i><div class="title-boss-box"><p class="boss-names">Halondrus</p></div></div>
-        <div class="box-boss anduin"><i class="absolute-check fa-solid fa-check"></i><div class="title-boss-box"><p class="boss-names">Anduin</p></div></div>
-        <div class="box-boss lords"><i class="absolute-check fa-solid fa-check"></i><div class="title-boss-box"><p class="boss-names">Lords</p></div></div>
-        <div class="box-boss rygelon"><i class="absolute-check fa-solid fa-check"></i><div class="title-boss-box"><p class="boss-names">Rygelon</p></div></div>
-        <div class="box-boss jailer"><span style="color:rgb(201, 201, 201);text-align: center; font-size: 30px;" class="absolute-check">100% 0 PULL</span><div class="title-boss-box"><p class="boss-names">Jailer</p></div></div>
-    </div>
-    <div id="desktopRaidMm" class="all-boss">
-        <div class="box-boss bnw guardian"><div class="title-boss-box"><p class="boss-names">Guardian</p></div></div>
-        <div class="box-boss bnw skolex"><div class="title-boss-box"><p class="boss-names">Skolex</p></div></div>
-        <div class="box-boss bnw xymox"><div class="title-boss-box"><p class="boss-names">Xy'mox</p></div></div>
-        <div class="box-boss bnw dausegne"><div class="title-boss-box"><p class="boss-names">Dausegne</p></div></div>
-        <div class="box-boss bnw pantheons"><div class="title-boss-box"><p class="boss-names">Pantheons</p></div></div>
-        <div class="box-boss bnw lihuvim"><div class="title-boss-box"><p class="boss-names">Lihuvim</p></div></div>
-        <div class="box-boss bnw halondrus"><div class="title-boss-box"><p class="boss-names">Halondrus</p></div></div>
-        <div class="box-boss bnw anduin"><div class="title-boss-box"><p class="boss-names">Anduin</p></div></div>
-        <div class="box-boss bnw lords"><div class="title-boss-box"><p class="boss-names">Lords</p></div></div>
-        <div class="box-boss bnw rygelon"><div class="title-boss-box"><p class="boss-names">Rygelon</p></div></div>
-        <div class="box-boss bnw jailer"><div class="title-boss-box"><p class="boss-names">Jailer</p></div></div>
-    </div>
-    <div id="raidNm" class="all-boss-mobile">
-        <ul class="all-boss-mobile">
-            <li class="all-boss-mobile-ul"><span style="width: 100px;">Guardian</span> </li>
-            <li class="line"></li>
-            <li class="all-boss-mobile-ul"><span style="width: 100px;">Skolex</span> </li>
-            <li class="line"></li>
-            <li class="all-boss-mobile-ul"><span style="width: 100px;">Xy'mox</span> </li>
-            <li class="line"></li>
-            <li class="all-boss-mobile-ul"><span style="width: 100px;">Dausegne</span> </li>
-            <li class="line"></li>
-            <li class="all-boss-mobile-ul"><span style="width: 100px;">Pantheons</span> </li>
-            <li class="line"></li>
-            <li class="all-boss-mobile-ul"><span style="width: 100px;">Lihuvim</span> </li>
-            <li class="line"></li>
-            <li class="all-boss-mobile-ul"><span style="width: 100px;">Halondrus</span> </li>
-            <li class="line"></li>
-            <li class="all-boss-mobile-ul"><span style="width: 100px;">Anduin</span> </li>
-            <li class="line"></li>
-            <li class="all-boss-mobile-ul"><span style="width: 100px;">Lords</span> </li>
-            <li class="line"></li>
-            <li class="all-boss-mobile-ul"><span style="width: 100px;">Rygelon</span> </li>
-            <li class="line"></li>
-            <li class="all-boss-mobile-ul"><span style="width: 100px;">Jailer</span> </li>
-        </ul>
-    </div>
-    <div id="raidHm" class="all-boss-mobile">
-        <ul class="all-boss-mobile">
-            <li class="all-boss-mobile-ul"><span style="width: 100px;">Guardian</span> </li>
-            <li class="line"></li>
-            <li class="all-boss-mobile-ul"><span style="width: 100px;">Skolex</span> </li>
-            <li class="line"></li>
-            <li class="all-boss-mobile-ul"><span style="width: 100px;">Xy'mox</span> </li>
-            <li class="line"></li>
-            <li class="all-boss-mobile-ul"><span style="width: 100px;">Dausegne</span> </li>
-            <li class="line"></li>
-            <li class="all-boss-mobile-ul"><span style="width: 100px;">Pantheons</span> </li>
-            <li class="line"></li>
-            <li class="all-boss-mobile-ul"><span style="width: 100px;">Lihuvim</span> </li>
-            <li class="line"></li>
-            <li class="all-boss-mobile-ul"><span style="width: 100px;">Halondrus</span> </li>
-            <li class="line"></li>
-            <li class="all-boss-mobile-ul"><span style="width: 100px;">Anduin</span> </li>
-            <li class="line"></li>
-            <li class="uncheck all-boss-mobile-ul"><span style="width: 100px;">Lords</span><br></li>
-            <li class="line"></li>
-            <li class="uncheck all-boss-mobile-ul"><span style="width: 100px;">Rygelon</span><br></li>
-            <li class="line"></li>
-            <li class="uncheck all-boss-mobile-ul"><span style="width: 100px;">Jailer</span><br></li>
-        </ul>
-    </div>
-    <div id="raidMm" class="all-boss-mobile">
-        <ul class="all-boss-mobile">
-            <li class="uncheck all-boss-mobile-ul"><span style="width: 100px;">Guardian</span><br></li>
-            <li class="line"></li>
-            <li class="uncheck all-boss-mobile-ul"><span style="width: 100px;">Skolex</span><br></li>
-            <li class="line"></li>
-            <li class="uncheck all-boss-mobile-ul"><span style="width: 100px;">Xy'mox</span><br></li>
-            <li class="line"></li>
-            <li class="uncheck all-boss-mobile-ul"><span style="width: 100px;">Dausegne</span><br></li>
-            <li class="line"></li>
-            <li class="uncheck all-boss-mobile-ul"><span style="width: 100px;">Pantheons</span><br></li>
-            <li class="line"></li>
-            <li class="uncheck all-boss-mobile-ul"><span style="width: 100px;">Lihuvim</span><br></li>
-            <li class="line"></li>
-            <li class="uncheck all-boss-mobile-ul"><span style="width: 100px;">Halondrus</span><br></li>
-            <li class="line"></li>
-            <li class="uncheck all-boss-mobile-ul"><span style="width: 100px;">Anduin</span><br></li>
-            <li class="line"></li>
-            <li class="uncheck all-boss-mobile-ul"><span style="width: 100px;">Lords</span><br></li>
-            <li class="line"></li>
-            <li class="uncheck all-boss-mobile-ul"><span style="width: 100px;">Rygelon</span><br></li>
-            <li class="line"></li>
-            <li class="uncheck all-boss-mobile-ul"><span style="width: 100px;">Jailer</span><br></li>
-        </ul>
-    </div>
+    <div class="mid-box">
+        <span class="nmy-recrute">NMY RECRUTE</span>
+        <span>Nous recherchons des joueurs matures, bienveillants, expérimentés et surtout motivés en vue de raider dans de bonnes conditions afin de terminer le progress HM et d'entamer le MM.<br>
+            Nous raidons obligatoirement 3 fois par semaine le lundi, mercredi et le dimanche de 20h30 à 23h30.</span><br>
+            <span>Cependant, nous avons quelques pré-requis :<br>
+                 <br>
+                - Avoir atteint le pallier 11/11 NM du Sépulcre des Fondateurs<br>
+                - Une côte minimum de 2000 points R.io en mythique +<br>
+                - Avoir plus de 18 ans<br>
+                - Minimum 2 pièces de tier-set.<br><br>
+                
+                Si vous pensez avoir le profil correspondant à nos attentes, nous vous invitons à nous rejoindre sur notre Discord et d'mp un officier avec votre profil R.io.</span>
+                <span class="btn-discord">DISCORD</span>
 </div>
-<div id="roster" class="box-title">
-    <i class="primRed fa-solid fa-people-group"></i>        
-    <p class="title">ROSTER</p>
-</div>
-<h3 class="second-title">ENEMY RAIDERS</h3>
-<div class="box-roster">
-    <div class="center-box-roster">
-        <div class="role-title">
-            <div class="roster">
-                <div class="icon-plus-title">
-                    <i class="primRed fa-solid fa-shield-halved"></i>
-                    <p class="padding tanks">TANKS</p>
-                </div>
-                <ul class="role-ul">
-                    <li class="padding-roster demon_hunter">Xdsmiley<span style="color: red; font-size: 12px; margin-left: 10px;"> GM & RL</span></li>
-                    <li class="padding-roster demon_hunter">Erynies</li>
-                    <li class="padding-roster druid">Daniel</li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="role-title">
-            <div class="roster">
-                <div class="icon-plus-title">
-                    <i class="primRed fa-solid fa-hand-holding-medical"></i>
-                    <p class="padding tanks">HEALS</p>
-                </div>
-                <ul class="role-ul">
-                    <li class="padding-roster role-li shaman">Choc</li>
-                    <li class="padding-roster shaman ">Darachs</li>
-                    <li class="padding-roster priest">Shanaille</li>
-                    <li class="padding-roster priest">Leanna <span style="color: rgb(201, 201, 201); font-size: 12px; margin-left: 10px;">Test</span></li>
+    <div id="container" class="container">
+    <div class="progress-box">
+        <div class="modes-box">
+            <span id="nmBtn" class="hover-effect pl-0 modes">NM</span>
+            <span id="hmBtn" class="hover-effect modes active">HM</span>
+            <span id="mmBtn" class="hover-effect modes">MM</span>
+            <span class="actual-progress">(ACTUAL PROGRESS 10/11 HM)</span>
 
-                </ul>
-            </div>
-        </div>
-        <div class="role-title" style="border: none;">
-            <div class="roster">
-                <div class="icon-plus-title">
-                    <i class="primRed fa-solid fa-hand-fist"></i>
-                    <p class="padding tanks">DPS</p>
-                </div>
-                <ul class="role-ul">
-                    <span style="color: rgb(201, 201, 201); font-size: 14px; width: 100%; display: flex; justify-content: center; margin-top: 10px; margin-bottom: 10px;">Melee</span>
-                    <li class="padding-roster monk">Pygnon</li>
-                    <li class="padding-roster rogue">Rikenuwu</li>
-                    <li class="padding-roster rogue">Aedis</li>
-                    <li class="padding-roster death_knight">Aldaandk</li>
-                    <li class="padding-roster demon_hunter">Shaios</li>
-                    <span style="color: rgb(201, 201, 201); font-size: 14px; width: 100%; display: flex; justify-content: center;margin-top: 10px; margin-bottom: 10px;">Ranged</span>
-                    <li class="padding-roster mage">Radagàst <span style="color: red; font-size: 12px; margin-left: 10px;"> Officier PvE</span></li>
-                    <li class="padding-roster mage">Ditsav <span style="color: rgb(201, 201, 201); font-size: 12px; margin-left: 10px;">Test</span></li>
-                    <li class="padding-roster hunter">Stayôlo</li>
-                    <li class="padding-roster hunter">Nôé</li>
-                    <li class="padding-roster hunter">Soax</li>
-                    <li class="padding-roster hunter">Matek <span style="color: rgb(201, 201, 201); font-size: 12px; margin-left: 10px;">Test</span></li>
-
-                    <li class="padding-roster warlock">Xetsén</li>
-                    <li class="padding-roster warlock">Altek <span style="color: rgb(201, 201, 201); font-size: 12px; margin-left: 10px;">Test</span></li>
-                    <li class="padding-roster warlock">Perldekoko</li>
-
-                </ul>
-            </div>
         </div>
     </div>
-</div>
-<div id="joinus" class="box-title">
-    <i class="primRed fa-solid fa-user-plus"></i>        
-    <p class="title">JOIN US</p>
-</div>
-<div class="box-join-us">
-    <div class="box-join-us-center">
-        <h3 class="nmy-recrute">NMY RECRUTE</h3>
-        <p><span class="whoweare">Qui sommes-nous ?</span><br><br>
-
-            Enemy est une guilde fondée par deux teams M+ évoluant aux alentours de 2k6 R.io.(patch 9.1, SoD).<br><br>
-            
-            Nous recherchons des joueurs matures, bienveillants, expérimentés et surtout motivés en vue de raider dans de bonnes conditions afin de terminer le progress HM et d'entamer le MM. <br><br>
-            
-            Nous raidons obligatoirement 3 fois par semaine le lundi, mercredi et le dimanche de 20h30 à 23h30. <br><br>
-            
-            <span class="cependant">Cependant, nous avons quelques pré-requis :</span><br><br>
-            
-            - Avoir atteint le pallier 11/11 NM du Sépulcre des Fondateurs<br>
-            - Une côte minimum de 2000 points R.io en mythique +<br>
-            - Avoir plus de 18 ans<br>
-            - Minimum 2 pièces de tier-set.<br><br>
-            
-            Si vous pensez avoir le profil correspondant à nos attentes, nous vous invitons à nous rejoindre sur notre <span style="font-weight: 700;">Discord</span> et d'mp un officier avec votre profil R.io. <br>
-        <div class="buttons">
-            <a class="btn-discord no-hover" href="https://discord.gg/9DJPQS9q5F" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-discord"></i> DISCORD</a>
-        </div>
+        <div id="progressLine" class="progress-line">
     </div>
+    <ul class="bosses-ul">
+        <li id="guardian" class="pl-0 bosses-li">GUARDIAN <span id="mmProgression">100% <br>0 PULL</span></li>
+        <li id="skolex" class="bosses-li">SKOLEX</li>
+        <li id="xymox" class="bosses-li">XY'MOX</li>
+        <li id="dausegne" class="bosses-li">DAUSEGNE</li>
+        <li id="pantheons" class="bosses-li">PANTHEONS</li>
+        <li id="lihuvim" class="bosses-li">LIHUVIM</li>
+        <li id="halondrus" class="bosses-li">HALONDRUS</li>
+        <li id="anduin" class="bosses-li">ANDUIN</li>
+        <li id="lords" class="bosses-li">LORDS</li>
+        <li id="rygelon" class="bosses-li">RYGELON</li>
+        <li id="jailer" class="active bosses-li pr-0">JAILER
+            <span id="progression">100% <br>0 PULL</span>
+        </li>
+    </ul>
+    <span id="cleared" class="cleared">NORMAL MODE CLEARED</span>
 </div>
-<script src="index.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>

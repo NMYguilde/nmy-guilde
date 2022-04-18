@@ -1,0 +1,53 @@
+@media screen and (max-width: 1200px) {
+    .container {
+        display: none;
+    }
+
+    
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+    }
+    .emplacement-logo {
+        width: unset;
+        margin: 30px;
+    }
+    .news-box {
+
+        width: auto;
+        height: 100%;
+        padding: 0px;
+    }
+    .news-all {
+        flex-direction: column !important;
+        display: flex !important;
+        flex-wrap: wrap;
+        padding: 40px;
+    }
+    ul {
+        padding-left: 0px;
+        justify-content: center;
+    }
+    .li-nav {
+        padding: 10px;
+    }
+    .text-box {
+        margin: 0px;
+        padding: 0px;
+        border-left: none;
+        border-top: 1px dotted dimgray;
+        margin-bottom: 20px;
+    }
+    .paragraphe {
+        padding: 10px
+    }
+    .no-border {
+        border: none !important
+    }
+    
+}
